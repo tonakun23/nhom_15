@@ -9,6 +9,6 @@
     outline: none;
     text-transform: capitalize;
 }
-ol ul{
+ol, ul{
     list-style: none;
 }
