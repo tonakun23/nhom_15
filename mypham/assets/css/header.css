@@ -10,13 +10,6 @@ header {
     /* border: solid black; */
     padding: 4.5rem 17% 0.6rem 17%;
 }
-
-html{
-    font-size: 100%;
-    overflow-x: hidden;
-    scroll-padding-top: 5.5rem;
-    scroll-behavior: smooth;
-}
 .logo img{
     width: 9.688rem;
     height: 3.313rem;

@@ -1,0 +1,115 @@
+footer{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    height:32.9375rem ;
+    background-color: #3D0505;
+}
+.noidung{
+    display: block;
+    padding-top:1.25rem;
+    padding-left: 2.375rem;
+    position: relative;
+}
+footer .grid{
+    display: flex;
+    align-items: center;
+    width: 85.3125rem;
+    justify-content: space-between;
+    margin-bottom: 2.7rem;
+    margin-top: 6.25rem;
+}
+.colum1{
+    display: block;
+    width: 32.4375rem;
+    text-align: left;
+    height: 8.5rem;
+    color: #fff;
+    font-weight: 400;
+
+}
+.dong1{
+    font-weight: 700;
+}
+.dongcuoi{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.4rem;
+
+}
+.icon_footer{
+    display: flex;
+    color:#fff ;
+}
+.baohanh{
+    width: 23.0625rem;
+    margin-left: 10rem;
+
+}
+.colum2{
+    display: flex;
+    max-width: 100%;
+    height: 8.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.25rem;
+
+}
+.colum3{
+    display: flex;
+    width: 23.0625rem;
+    height: 8.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    margin-left: 10rem;
+}
+.colum3 a{
+    text-transform: uppercase;
+    color: #ECBE26;
+    font-weight: 700;
+}
+.colum3 li{
+    text-transform: uppercase;
+}
+.icon_footer{
+    width: 32.4375rem;
+    font-size: 1.75rem;
+    gap: 3rem;
+}
+.year_product{
+    width: 15.0625rem;
+    color: #fff;
+
+}
+.lienhe1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lienhe1 a{
+    color: #ECBE26;
+    font-weight: 700;
+}
+.lienhe{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+    color: #fff;
+}
+.sdt{
+    font-size: 1rem;
+}
+.line{
+    display: block;
+    width: 90.25rem;
+    position: absolute;
+    border-bottom:0.16rem solid #ECBE26;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.logo{
+    width: 14rem;
+    height: 4.75rem;
+}

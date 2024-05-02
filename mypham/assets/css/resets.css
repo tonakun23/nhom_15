@@ -12,3 +12,9 @@
 ol, ul{
     list-style: none;
 }
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
