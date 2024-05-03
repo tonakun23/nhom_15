@@ -9,7 +9,13 @@ header {
     z-index: 1000;
     /* border: solid black; */
     padding: 4.5rem 17% 0.6rem 17%;
-    background-color: #fff;
+}
+
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
 }
 .logo img{
     width: 9.688rem;
