@@ -9,6 +9,7 @@ header {
     z-index: 1000;
     /* border: solid black; */
     padding: 4.5rem 17% 0.6rem 17%;
+    background-color: #fff;
 }
 .logo img{
     width: 9.688rem;
