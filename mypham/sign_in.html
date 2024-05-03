@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="./assets/css/resets.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/sign_in.css" />
+  </head>
+  <body>
+    <!-- header section start -->
+    <header>
+      <a href="" class="logo"
+        ><img src="./assets/picture/header/logo.svg" alt=""
+      /></a>
+      <nav class="navbar" class="active">
+        <a class="active1" href="" class="sanpham">sản phẩm</a>
+        <a href="" class="về chúng tôi">về chúng tôi</a>
+        <a href="" class="tin tức">tin tức</a>
+      </nav>
+      <div class="action">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <img class="search" src="./assets/picture/header/search.svg" alt="" />
+        <img class="bag" src="./assets/picture/header/account.svg" alt="" />
+        <a href=""
+          ><img class="account" src="./assets/picture/header/bag.svg" alt=""
+        /></a>
+      </div>
+    </header>
+    <!-- search form -->
+    <form action="" id="search-form">
+      <input type="search" name="" id="search-box" placeholder="Tìm kiếm" />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+    <script src="./assets/js/header.js"></script>
+    <section class="main_sign_in">
+      <div class="base">
+        <img src="./assets/picture/login/gift_set.png" alt="logo_gift" />
+      </div>
+      <div class="sign_in_page">
+        <h3 class="sign_in">ĐĂNG KÝ</h3>
+        <input class="input1" type="Name" placeholder="Tên" />
+        <input class="input1" type="password" placeholder="Mật khẩu" />
+        <p class="font_some">
+          Ít nhất có 8 ký tự bao gồm số và chữ cái viết hoa
+        </p>
+
+        <input class="input1" type="phone_number" placeholder="Số điện thoại" />
+        <input class="input1" type="email" placeholder="Email" />
+        <div class="security_checkbox">
+          <a
+            class="security"
+            href="https://policies.google.com/privacy?hl=vi"
+            target="_blank"
+            >Chính sách bảo mật</a
+          >
+          <input class="checkbox1" type="checkbox" />
+          <label for="option1" class="option1">Chấp nhận</label>
+        </div>
+        <div class="click_sing_in"><p class="color_text">ĐĂNG KÝ</p></div>
+        <br />
+        <div class="link_login">
+          <p>Bạn đã có tài khoảng Cocoon?</p>
+          <a class="login_text" href="./login.html"> Đăng nhập</a>
+        </div>
+        <br />
+        <button class="login_google">
+          <img
+            class="logo"
+            src="./assets/picture/login/logo_google.png"
+            alt="logo_google"
+          />
+          <div><b>Đăng nhập với Google</b></div>
+          <div></div>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
