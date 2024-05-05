@@ -12,27 +12,32 @@ body {
 }
 
 .login_page {
-    width: 32.5rem;
-    /* Có thể bạn cần điều chỉnh lại kích thước này tùy thuộc vào nội dung */
-    padding: 2rem;
-    /* Giữ nguyên hoặc điều chỉnh lại padding nếu cần thiết */
-    margin: 2rem auto;
-    background-color: #FFFFFF;
-    /* Loại bỏ chiều cao cố định và thay thế bằng min-height để nội dung có thể mở rộng */
-    min-height: 32rem;
-    /* Có thể điều chỉnh min-height nếu cần */
+    width: 410px;  
+    height: 615px; 
+    padding: 20px; 
+    margin-top: 256px;
+    margin: 20px auto; 
+    background-color: #FFFFFF; 
     border-radius: 5px;
     display: flex;
-    flex-direction: column; /* Arrange elements vertically */
+    flex-direction: column; 
 }
+
+
 
 .login {
     color: #D09A59; 
     font-size: 1.5rem; 
     text-align: left; 
     margin-bottom: 14px;
-    order: 1; /* Place heading at the top */
+    order: 1; 
+    padding-top: 30px;/* Place heading at the top */
 }
+
+.text_pading {
+    padding-top: 30px;
+}
+
 
 .input1 {
     width: 100%;
@@ -72,7 +77,12 @@ body {
     height: 40px; 
     line-height: 40px;
     border-radius: 3px;
-    order: 6; /* Place "Login" button after options */
+    order: 6;
+
+}
+
+.font_weight {
+    font-weight: 700;
 }
 
 .color_text {
@@ -84,7 +94,8 @@ body {
     justify-content: center;
     align-items: center; 
     gap: 30px;
-    order: 7; /* Place signup link at the bottom */
+    order: 7; 
+    padding-top: 70px;
 }
 
 .link_signup p {
@@ -107,8 +118,10 @@ body {
     order: 2; /* Place "Login with Google" button next */
 }
 
+
 .logo {
     font-size: 24px; 
+    padding: auto;
 }
 
 .link_login_google {
@@ -119,7 +132,7 @@ body {
 .divider-text {
     order: 3;
     text-align: center;
-    margin: 10px 0; 
+    margin: 30px 0 ; 
     color: #999; 
 }
 
@@ -136,12 +149,16 @@ body {
     
 }
 
+.pading_top {
+    padding-top: 50px;
+}
+
 @media(max-width: 768px) {
     .main_login {
         display: flex; 
         justify-content: center;
         align-items: center;
-        min-height: 100vh; 
+        min-height: 100vh;  
     }
 
     .login_page {
@@ -149,5 +166,6 @@ body {
         margin: 0;
         padding: 1rem;
         box-sizing: border-box;
+        padding-top: 20px;
     }
 }

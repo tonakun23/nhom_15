@@ -1,167 +1,215 @@
-body {
-    font-family: 'Arial', sans-serif;
-}
+    body {
+        font-family: 'Arial', sans-serif;
+    }
 
-.main_sign_in {
-    background-color: #921511;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    position: relative;
-
-}
-
-.sign_in_page {
-    width: 32.5rem;
-    /* Có thể bạn cần điều chỉnh lại kích thước này tùy thuộc vào nội dung */
-    padding: 2rem;
-    /* Giữ nguyên hoặc điều chỉnh lại padding nếu cần thiết */
-    margin: 2rem auto;
-    background-color: #FFFFFF;
-    /* Loại bỏ chiều cao cố định và thay thế bằng min-height để nội dung có thể mở rộng */
-    min-height: 36.3rem;
-    /* Có thể điều chỉnh min-height nếu cần */
-    border-radius: 5px;
-}
-
-.sign_in {
-    color: #D09A59;
-    font-size: 1.5rem;
-    text-align: left;
-    margin-bottom: 14px;
-}
-
-
-.input1 {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.input1:focus {
-    outline: none;
-    border-color: #D09A59;
-}
-
-
-.base {
-    width: 90%;
-    max-width: 37.875rem;
-    margin: 2rem auto;
-}
-
-.base img {
-
-    width: 100%;
-    height: auto;
-}
-
-.font_some {
-    font-size: 14px;
-    margin-left: 20px;
-    font-weight: 100;
-    
-
-}
-
-.security_checkbox {
-    display: flex;
-
-
-}
-
-.security_checkbox .checkbox1 {
-    padding: 3px;
-    margin-left: auto;
-}
-
-
-.security {
-    font-size: 14px;
-    color: #BB3737;
-}
-
-.option1 {
-    margin-left: 3px;
-    font-size: 14px;
-    color: #BB3737;
-}
-
-.click_sing_in {
-    text-align: center;
-    margin-top: 30px;
-    background-color: #D09A59;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 3px;
-
-}
-
-.color_text {
-    color: #FFFFFF;
-}
-
-.link_login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-.link_login p {
-    font-weight: 100;
-    color: #00000080 50%;
-}
-
-.login_text {
-    color: #BB3737;
-}
-
-.login_google{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  background-color: #FFFFFF;
-  border: 1px solid #000000 ;
-  border-radius: 3px;
-  
-  
-}
-
-.logo {
-    font-size: 24px;
-}
-
-.link_login_google {
-    font-size: 20px;
-    padding-top: 11px;
-}
-
-
-@media(max-width: 768px) {
     .main_sign_in {
+        background-color: #921511;
         display: flex;
-        /* Duy trì hoặc thêm nếu chưa có */
+        flex-wrap: wrap;
         justify-content: center;
-        /* Căn giữa theo chiều ngang */
         align-items: center;
-        /* Căn giữa theo chiều dọc */
         min-height: 100vh;
-        /* Đảm bảo chiều cao tối thiểu của container */
+        position: relative;
+        
+
     }
 
     .sign_in_page {
-        width: auto;
-        /* Cho phép chiều rộng tự động điều chỉnh để phù hợp với kích thước màn hình */
-        margin: 0;
-        /* Loại bỏ margin để không ảnh hưởng đến việc căn giữa */
-        padding: 1rem;
-        /* Điều chỉnh padding nếu cần */
-        box-sizing: border-box;
-        /* Đảm bảo padding không làm tăng kích thước tổng thể của box */
+        width: 32.5rem;
+        /* Có thể bạn cần điều chỉnh lại kích thước này tùy thuộc vào nội dung */
+        padding: 2rem;
+        /* Giữ nguyên hoặc điều chỉnh lại padding nếu cần thiết */
+        margin: 2rem auto;
+        background-color: #FFFFFF;
+        /* Loại bỏ chiều cao cố định và thay thế bằng min-height để nội dung có thể mở rộng */
+        min-height: 36.3rem;
+        /* Có thể điều chỉnh min-height nếu cần */
+        border-radius: 5px;
     }
-}
+
+    .sign_in {
+        color: #D09A59;
+        font-size: 1.5rem;
+        text-align: left;
+        margin-bottom: 14px;
+    }
+
+
+    .input1 {
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .input1:focus {
+        outline: none;
+        border-color: #D09A59;
+    }
+
+
+    .base {
+        width: 90%;
+        max-width: 37.875rem;
+        margin: 2rem auto;
+    }
+
+    .base img {
+
+        width: 100%;
+        height: auto;
+    }
+
+    .font_some {
+        font-size: 14px;
+        margin-left: 20px;
+        font-weight: 100;
+        
+
+    }
+
+    .security_checkbox {
+        display: flex;
+
+
+    }
+
+    .security_checkbox .checkbox1 {
+        padding: 3px;
+        margin-left: auto;
+    }
+
+
+    .security {
+        font-size: 14px;
+        color: #BB3737;
+    }
+
+    .option1 {
+        margin-left: 3px;
+        font-size: 14px;
+        color: #BB3737;
+    }
+
+    .click_sing_in {
+        text-align: center;
+        margin-top: 30px;
+        background-color: #D09A59;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 3px;
+
+    }
+
+
+    
+    .color_text {
+        color: #FFFFFF;
+    }
+
+    .link_login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .link_login p {
+        font-weight: 100;
+        color: #00000080 50%;
+    }
+
+    .login_text {
+        color: #BB3737;
+    }
+
+    .login_google{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #000000 ;
+    border-radius: 3px;
+    
+    
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .link_login_google {
+        font-size: 20px;
+        padding-top: 11px;
+    }
+
+    .font_weight{
+        font-weight: 700;
+    }
+    .success-popup {
+        display: none; /* Initially hidden */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #c72222;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 100;
+        text-align: center; /* Center the text */
+        width: 500px; /* Adjust width as needed */
+    }
+
+    .success-popup img {
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    .success-popup h3 {
+        font-size: 1.5rem; /* Adjust size as needed */
+        margin-bottom: 10px;
+    }
+
+    .success-popup p {
+        font-size: 1rem; /* Adjust size as needed */
+        margin-bottom: 20px;
+    }
+
+    .success-popup button {
+        background-color: #D09A59;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .tick_success {
+        justify-content: center;
+    }
+
+    @media(max-width: 768px) {
+        .main_sign_in {
+            display: flex;
+            /* Duy trì hoặc thêm nếu chưa có */
+            justify-content: center;
+            /* Căn giữa theo chiều ngang */
+            align-items: center;
+            /* Căn giữa theo chiều dọc */
+            min-height: 100vh;
+            /* Đảm bảo chiều cao tối thiểu của container */
+        }
+
+        .sign_in_page {
+            width: auto;
+            /* Cho phép chiều rộng tự động điều chỉnh để phù hợp với kích thước màn hình */
+            margin: 0;
+            /* Loại bỏ margin để không ảnh hưởng đến việc căn giữa */
+            padding: 1rem;
+            /* Điều chỉnh padding nếu cần */
+            box-sizing: border-box;
+            /* Đảm bảo padding không làm tăng kích thước tổng thể của box */
+        }
+    }
