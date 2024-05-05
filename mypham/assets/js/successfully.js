@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const signUpButton = document.querySelector('.click_sing_in');
+  const signUpButton = document.querySelector('.click_sing_up');
   const successPopup = document.createElement('div');
 
   // Create popup content
   successPopup.classList.add('success-popup');
   successPopup.innerHTML = `
-    <img src="./assets/picture/login/tick.png" alt="Success"> 
+    <img src="./assets/picture/login/frane.png" alt="Success"> 
     <h3>Đăng ký thành công</h3>
     <p>Cám ơn bạn đã đăng ký tài khoản của Cocoon</p>
     <button type="button">VỀ TRANG CHỦ</button> 

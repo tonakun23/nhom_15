@@ -2,7 +2,7 @@
         font-family: 'Arial', sans-serif;
     }
 
-    .main_sign_in {
+    .main_sign_up {
         background-color: #921511;
         display: flex;
         flex-wrap: wrap;
@@ -14,7 +14,7 @@
 
     }
 
-    .sign_in_page {
+    .sign_up_page {
         width: 32.5rem;
         /* Có thể bạn cần điều chỉnh lại kích thước này tùy thuộc vào nội dung */
         padding: 2rem;
@@ -27,7 +27,7 @@
         border-radius: 5px;
     }
 
-    .sign_in {
+    .sign_up {
         color: #D09A59;
         font-size: 1.5rem;
         text-align: left;
@@ -48,7 +48,7 @@
         border-color: #D09A59;
     }
 
-
+   
     .base {
         width: 90%;
         max-width: 37.875rem;
@@ -92,7 +92,7 @@
         color: #BB3737;
     }
 
-    .click_sing_in {
+    .click_sing_up {
         text-align: center;
         margin-top: 30px;
         background-color: #D09A59;
@@ -186,12 +186,9 @@
         cursor: pointer;
     }
 
-    .tick_success {
-        justify-content: center;
-    }
 
     @media(max-width: 768px) {
-        .main_sign_in {
+        .main_sign_up {
             display: flex;
             /* Duy trì hoặc thêm nếu chưa có */
             justify-content: center;
@@ -202,7 +199,7 @@
             /* Đảm bảo chiều cao tối thiểu của container */
         }
 
-        .sign_in_page {
+        .sign_up_page {
             width: auto;
             /* Cho phép chiều rộng tự động điều chỉnh để phù hợp với kích thước màn hình */
             margin: 0;
