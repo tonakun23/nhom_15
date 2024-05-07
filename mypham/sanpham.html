@@ -6,6 +6,8 @@
     <title>sản phẩm</title>
     <link rel="stylesheet" href="./assets/css/resets.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/sanpham.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -14,12 +16,12 @@
             <a href="" class="logo"><img src="./assets/picture/header/logo.svg" alt=""></a>
             <nav class="navbar" class="active">
                 <div>
-                    <a class="active1" href="" class="sanpham">sản phẩm</a>
+                    <a class="active1" href="#" class="sanpham" onclick="toggleSubnav(event)">sản phẩm</a>
                     <ul class="subnav">
-                        <li><a class="active1" href="" class="sanpham">chăm sóc da</a></li>
-                        <li><a class="active1" href="" class="sanpham">chăm sóc cơ thể</a></li>
-                        <li><a class="active1" href="" class="sanpham">chăm sóc môi</a></li>
-                        <li><a class="active1" href="" class="sanpham">chăm sóc tóc</a></li>
+                        <li><a class="active1" href="sanpham.html" class="sanpham">chăm sóc da</a></li>
+                        <li><a class="active1" href="#" class="sanpham">chăm sóc cơ thể</a></li>
+                        <li><a class="active1" href="#" class="sanpham">chăm sóc môi</a></li>
+                        <li><a class="active1" href="#" class="sanpham">chăm sóc tóc</a></li>
                     </ul>
                 </div>
                 <a href="" class="vechungtoi">về chúng tôi</a>
@@ -38,6 +40,134 @@
         <label for="search-box" class="fas fa-search"></label>
         <i class="fas fa-times" id="close"></i>
     </form>
+    <!-- phần nội dung -->
+    <div class="noidung_sanpham" >
+        <img src="./assets/picture/sanpham/aodai.png" alt="">
+        <img src="./assets/picture/sanpham/logo.png" alt="">
+        <div class="thongbao">
+            <h1>Thông báo !</h1>
+            <p><span>Cocoon vẫn tiếp tục nhân đơn hàng từ website, Shopee, Lazada,..</span><br>nhưng sẽ giao hàng sau thời gian giãn cách xã hội tăng cường tại TP.HCM hoặc khi có thông báo mới từ chính phủ. </p>
+        </div>
+        <h1 class="cacsp">SẢN PHẨM CỦA COCOON</h1>
+        <div class="sanpham_sp">
+            <a class="itemsp" href="">
+                <img class="anh_sp" src="./assets/picture/sanpham/bidao.png" alt="">
+                <div class="mieuta"><h1 class="idsp">chăm sóc da</h1></div>
+            </a>
+            <a class="itemsp" href="">
+                <img class="anh_sp" src="./assets/picture/sanpham/caphe.png" alt="">
+                <div class="mieuta"><h1 class="idsp">chăm sóc cơ thể</h1></div>
+            </a>
+            <a class="itemsp" href="">
+                <img class="anh_sp" src="./assets/picture/sanpham/hatcaphe.png" alt="">
+                <div class="mieuta"><h1 class="idsp">chăm sóc môi</h1></div>
+            </a>
+            <a class="itemsp" href="">
+                <img class="anh_sp" src="./assets/picture/sanpham/tinhdaibuoi.png" alt="">
+                <div class="mieuta"><h1 class="idsp">chăm sóc tóc</h1></div>
+            </a>
+        </div>
+        <div class="thachbidao">
+            <img class="gift" src="./assets/picture/sanpham/gift.png" alt="">
+            <div class="thachbidao2">
+                <div class="layout_bidao">
+                    <div class="content_bidao">
+                        <h1 class="bidaoline1">THẠCH BÍ ĐAO</h1>
+                        <p class="bidaoline2">Sản phẩm là sự kết hợp giữa chiết xuất bí đao thanh mát, 5α-AVOCUTA® được chưng cất phân tử từ dầu quả bơ và TECA™ trích ly từ rau má</p>
+                        <a class="bidaoline3" href="">XEM THÊM</a>
+                    </div>
+                </div>
+                <img class="thachbidao_anh" src="./assets/picture/sanpham/thachbidao.png" alt="">
+            </div>
+        </div>
+        <div class="product_most">
+            <h1 class="text_sp">SẢN PHẨM YÊU THÍCH</h1>
+            <div class="product_most_img">
+                <div class="item_like">
+                    <img src="./assets/picture/sanpham/caphe1.png" alt="">
+                    <h3 class="ten_mostproduct">COMBO LÀM SẠCH DA CHẾT TOÀN DIỆN TỪ CÀ PHÊ ĐẮK LẮK</h3>
+                    <h3 class="gia_most">318.000đ</h3>
+                </div>
+                <div class="item_like">
+                    <img src="./assets/picture/sanpham/caphe2.png" alt="">
+                    <h3 class="ten_mostproduct">COMBO 3 CÀ PHÊ ĐẮK LẮK LÀM SẠCH DA CHẾT CƠ THỂ</h3>
+                    <h3 class="gia_most">335.000đ</h3>
+                </div>
+                <div class="item_like">
+                    <img src="./assets/picture/sanpham/caphe3.png" alt="">
+                    <h3 class="ten_mostproduct">COMBO LÀM SẠCH DA VÀ DƯỠNG ẨM CƠ THỂ TỪ CÀ PHÊ ĐẮK LẮK</h3>
+                    <h3 class="gia_most">295.000đ</h3>
+                </div>
+            </div>
+        </div>
+        <div class="many_aboutsp">
+            <h1 class="text_sp">KHOẢNH KHẮC CÙNG COCOON</h1>
+            <div class="khoangkhac">
+                <img class="goc1" src="./assets/picture/sanpham/son.png" alt="">
+                <img class="goc2" src="./assets/picture/sanpham/damat.png" alt="">
+                <img class="goc3" src="./assets/picture/sanpham/matna.png" alt="">
+                <img class="goc4" src="./assets/picture/sanpham/body.png" alt="">
+                <img class="giua" src="./assets/picture/sanpham/giua.png" alt="">
+            </div>
+        </div>
+    </div>
+        <!-- footer -->
+        <footer>
+            <div class="noidung">
+            <img class="logo" src="./assets/picture/header/logo.svg" alt="">
+            <ul class="grid">
+                <li>
+                    <ul class="colum1">
+                        <li class="dong1">SẢN XUẤT TẠI CÔNG TY TNHH MỸ PHẨM NATURE STORY</li>
+                        <li class="">SỐ GPKD: 0313300273</li>
+                        <li class="">Phòng Đăng kí Kinh doanh - Sở kế hoạch và đầu tư <br>
+                         38C - 39C, khu phố 1, quốc lộ 1A, phường Tân Thới Hiệp, Quận 12, Tp.HCM, Việt Nam</li>
+                        <li class="">Điện thoại: 02838328228</li>
+                </ul>
+                </li>
+                <li>
+                    <ul class="colum2">
+                        <li class="">
+                            <ul class="lienhe1">
+                                <li><a href="">LIÊN HỆ</a></li>
+                                <li><a href="">ĐẠI LÍ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="lienhe">
+                                <li><img src="./assets/picture/footer/phone.png" alt=""></li>
+                                <li class="sdt">028 3832 8228</li>
+                            </ul>
+                        </li>
+                        <li class="lienhe1"><a href="">HƯỚNG DẪN MUA HÀNG</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="colum3">
+                        <li><a href="">chính sách bảo mật</a></li>
+                        <li><a href="">chính sách đổi trả</a></li>
+                        <li><a href="">chính sách giao hàng</a></li>
+                    </ul>
+                </li>
+            </ul>
+                <div class="line"></div>
+                <ul class="dongcuoi">
+                    <li>
+                        <ul  class="icon_footer">
+                            <li><img class="face" src="./assets/picture/footer/iconface.png" alt=""></li>
+                            <li><img class="twiter" src="./assets/picture/footer/icontwit.png" alt=""></li>
+                            <li><img class="intas" src="./assets/picture/footer/iconintas.png" alt=""></li>
+                            <li><img class="ytb" src="./assets/picture/footer/iconytb.png" alt=""></li>
+                        </ul>
+                    </li>
+                    <li class="year_product">©2018 Cocoon</li>
+                    <li class="baohanh"><img src="./assets/picture/footer/congthuong.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+    </div>
+    <!-- javascript -->
     <script src="./assets/js/header.js"></script>
 
 </body>
