@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sản phẩm cà phê DakLak</title>
+    <link rel="stylesheet" href="./assets/css/resets.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/caphedaklak.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+            <a href="" class="logo"><img src="./assets/picture/header/logo.svg" alt=""></a>
+            <nav class="navbar" class="active">
+                <div>
+                    <a class="active1" href="#" class="sanpham" onclick="toggleSubnav(event)">sản phẩm</a>
+                    <ul class="subnav">
+                        <li><a class="active1" href="" class="sanpham">chăm sóc da</a></li>
+                        <li><a class="active1" href="" class="sanpham">chăm sóc cơ thể</a></li>
+                        <li><a class="active1" href="" class="sanpham">chăm sóc môi</a></li>
+                        <li><a class="active1" href="" class="sanpham">chăm sóc tóc</a></li>
+                    </ul>
+                </div>
+                <a href="" class="vechungtoi">về chúng tôi</a>
+                <a href="" class="tintuc">tin tức</a>
+            </nav>
+            <div class="action">
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <img class="search" src="./assets/picture/header/search.svg" alt="">
+                <img class="bag" src="./assets/picture/header/account.svg" id="cart-icon" alt="">
+                <div class="cart">
+                    <!-- cart tiltel -->
+                    <h2 class="cart-title">Your Cart</h2>
+                    <!-- content -->
+                    <div class="cart-content">
+                    </div>
+                    <!-- total -->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">$0</div>
+                    </div>
+                    <!-- buy button -->
+                        <button class="btn-buy">Buy Now</button>
+                        <!--cart close  -->
+                        <i class="fa-solid fa-x" id="close-cart"></i>
+                </div>
+                
+                <a href="sign_up.html"><img class="account" src="./assets/picture/header/bag.svg" alt=""></a>
+            </div>
+    </header>
+    <!-- search form -->
+    <form action="" id="search-form">
+        <input type="search" name="" id="search-box" placeholder="Tìm kiếm">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- phan noi dung chinh -->
+    <section class="wrapper">
+        <img class="banner" src="./assets/picture/caphedaklak/banner.png" alt="">
+        <div class="gioithieu">
+            <h1>chăm sóc cơ thể</h1>
+            <div class="min_noidung">Đã chăm sóc da mặt thì chúng ta cũng phải quan tâm đến da cơ thể nữa đó, body chúng ta hằng ngày cũng đang "kêu cứu" nhiều lắm, hãy cùng Cocoon giải quyết các vấn đề của da yêu nhé!</div>
+        </div>
+        <div class="shop-content">
+            <!-- box1     -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/bacafe.png" alt="">
+                <h2 class="product_title">CÀ PHÊ ĐẮK LẮK LÀM SẠCH DA CHẾT CƠ THỂ</h2>
+                <p class="price">$10</p>
+                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+            </div>
+            <!-- box2     -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/tinhdau.png" alt="">
+                <h2 class="product_title">GEL TẮM KHUYNH DIỆP & BẠC HÀ</h2>
+                <p class="price">$65</p>
+                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+            </div>
+            <!-- box3     -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/tinhdaube.png" alt="">
+                <h2 class="product_title">SỮA DƯỠNG THỂ KHUYNH DIỆP & BẠC HÀ</h2>
+                <p class="price">$56</p>
+                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+            </div>
+            <!-- box4     -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/boduong.png" alt="">
+                <h2 class="product_title">BƠ DƯỠNG THỂ CÀ PHÊ ĐẮK LẮK</h2>
+                <p class="price">$67</p>
+                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+            </div>
+            <!-- box5     -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/nuocrautay.png" alt="">
+                <h2 class="product_title">NƯỚC RỬA TAY KHÔ KHUYNH DIỆP VÀ BẠC HÀ</h2>
+                <p class="price">$54</p>
+                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+            </div>
+            <!-- box6     -->
+            <div class="product_box">
+                <img  class="box1" src="./assets/picture/caphedaklak/geltay.png" alt="">
+                <h2 class="product_title">GEL TẮM BÍ ĐAO</h2>
+                <p class="price">$23</p>
+                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+            </div>
+            <!-- box7     -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/combo1.png" alt="">
+                <h2 class="product_title">COMBO KHUYNH DIỆP & BẠC HÀ</h2>
+                <p class="price">$12</p>
+                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+            </div>
+            <!-- box8     -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/combo2.png" alt="">
+                <h2 class="product_title">COMBO BODY SẠCH MỤN </h2>
+                <p class="price">$32</p>
+                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+            </div>            
+        </div>
+    </section>
+    <i class="fa-solid fa-circle-minus"></i>
+
+
+
+    <!-- phần js -->
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/caphedaklak.js"></script>
+
+</body>
+</html>
+</body>
+</html>
