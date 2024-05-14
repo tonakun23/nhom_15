@@ -139,6 +139,12 @@
 /* sản phẩm yêu thích */
 .product_most{
     margin-top: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
 }
 .text_sp{
     font-family: "Alatsi", sans-serif;
@@ -147,8 +153,13 @@
     text-align: center;
 }
 .product_most_img{
+    width: 71rem;
+    overflow: hidden;
+}
+.list-items{
     display: flex;
     gap: 5rem;
+    transition: 0.5s;
 }
 .item_like{
     width: 20.49rem;

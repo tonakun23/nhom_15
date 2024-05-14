@@ -71,13 +71,18 @@
 }
 .product_box:hover{
     padding: 10px;
-    border: 1px solid;
     transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
 }
 .tang_them{
     width: 2.5rem;
     margin-left: auto;
     cursor: pointer;
+    transition: all 0.3s;
+}
+.tang_them:hover{
+    content: url("/mypham/assets/picture/caphedaklak/tang_lendo.png");
 }
 .box6{
     width: 160px;
@@ -184,4 +189,45 @@
     right: 0.8rem;
     font-size: 1.6rem;
     cursor: pointer;
+}
+
+
+
+/* sanr pham yeu thich */
+.btn{
+    font-size: 4rem;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-60%);
+    transition: .3s;
+
+}
+.btn:hover{
+    color: grey;
+}
+.btn-left{
+    left: 15rem;
+}
+.btn-right{
+    right: 15rem;
+}
+
+.index-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.index-item{
+    border: solid #D2AC62;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 50%;
+}
+.active4{
+    background-color: #E4BE6D;
+
+}
+.product_most{
+    margin-bottom: 8rem;
 }
