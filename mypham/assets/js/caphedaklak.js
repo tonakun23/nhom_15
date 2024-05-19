@@ -1,96 +1,115 @@
-let cartIcon = document.querySelector('#cart-icon')
-let cart = document.querySelector('.cart')
-let closeCart = document.querySelector('#close-cart')
+let cartIcon = document.querySelector('#cart-icon');
+let cart = document.querySelector('.cart');
+let closeCart = document.querySelector('#close-cart');
 
-// open 
-cartIcon.onclick = () =>{
+// Open cart
+cartIcon.onclick = () => {
     cart.classList.add('active');
 };
-// close
-closeCart.onclick = () =>{
+
+// Close cart
+closeCart.onclick = () => {
     cart.classList.remove('active');
 };
 
-// cart working js
-if(document.readyState== "loading"){
+// Wait for DOM to load before setting up event listeners
+if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", ready);
-}else{
+} else {
     ready();
 }
 
-// making function
+// Function to set up event listeners and load cart from local storage
 function ready() {
-    // remove item from cart
-    var removeCartButtons = document.getElementsByClassName("cart-remove");
-    console.log(removeCartButtons)
-    for(var i =0; i < removeCartButtons.length;i++){
-        var button = removeCartButtons[i]
-        button.addEventListener("click", removeCartItem)
+    // Remove item from cart
+    let removeCartButtons = document.getElementsByClassName("cart-remove");
+    for (let button of removeCartButtons) {
+        button.addEventListener("click", removeCartItem);
     }
-    // quantity changes
-    var quantityIputs = document.getElementsByClassName("cart-quantity")
-    for(var i =0; i < quantityIputs.length;i++){
-        var input = quantityIputs[i]
+
+    // Quantity changes
+    let quantityInputs = document.getElementsByClassName("cart-quantity");
+    for (let input of quantityInputs) {
         input.addEventListener("change", quantityChanged);
     }
-    // add to cart
-    var addCart = document.getElementsByClassName("tang_them");
-    for (var i =0;i< addCart.length;i++){
-        var button = addCart[i];
+
+    // Add to cart
+    let addCartButtons = document.getElementsByClassName("tang_them");
+    for (let button of addCartButtons) {
         button.addEventListener("click", addCartClicked);
     }
-    // buy cart working
-    document.getElementsByClassName("btn-buy")[0].addEventListener("click",buyButtonClicked);
 
+    // Buy button
+    document.getElementsByClassName("btn-buy")[0].addEventListener("click", buyButtonClicked);
+
+    // Load cart from local storage
+    loadCartFromLocalStorage();
 }
-function buyButtonClicked(){
-    alert("Your oder place here");
-    var cartContent = document.getElementsByClassName("cart-content")[0]
-    while(cartContent.hasChildNodes()){
-        cartContent.removeChild(cartContent.firstChild)
+
+// Buy button clicked
+function buyButtonClicked() {
+    alert("Your order has been placed");
+    let cartContent = document.getElementsByClassName("cart-content")[0];
+    while (cartContent.hasChildNodes()) {
+        cartContent.removeChild(cartContent.firstChild);
     }
     updateTotal();
+    saveCartToLocalStorage();
 }
 
-// xoa phan tu tu cart
-function removeCartItem(event){
-    var buttonClicked = event.target;
-    buttonClicked.parentElement.remove();
+// Remove item from cart
+function removeCartItem(event) {
+    event.target.parentElement.remove();
     updateTotal();
+    saveCartToLocalStorage();
 }
-// quantity changes
-function quantityChanged(event){
-    var input = event.target;
-    if(isNaN(input.value) || input.value <= 0){
+
+// Quantity changes
+function quantityChanged(event) {
+    let input = event.target;
+    if (isNaN(input.value) || input.value <= 0) {
         input.value = 1;
     }
     updateTotal();
+    saveCartToLocalStorage();
 }
-// add to cart
-function addCartClicked(event){
-    var button = event.target;
-    var shopProducts = button.parentElement;
-    var title=shopProducts.getElementsByClassName("product_title")[0].innerText;
-    var price=shopProducts.getElementsByClassName("price")[0].innerText;
-    var productImg=shopProducts.getElementsByClassName("box1")[0].src;
+
+// Add to cart
+function addCartClicked(event) {
+    let button = event.target;
+    let shopProduct = button.closest('.product_box');
+    let titleElement = shopProduct.querySelector(".product_title");
+    let priceElement = shopProduct.querySelector(".price");
+    let imgElement = shopProduct.querySelector(".box1");
+
+    if (!titleElement || !priceElement || !imgElement) {
+        console.error('Failed to add product to cart. Missing information.');
+        return;
+    }
+
+    let title = titleElement.innerText;
+    let price = priceElement.innerText;
+    let productImg = imgElement.src;
 
     addProductToCart(title, price, productImg);
     updateTotal();
+    saveCartToLocalStorage();
 }
 
-function addProductToCart(title, price, productImg){
-    var cartShopBox = document.createElement("div");
+// Add product to cart
+function addProductToCart(title, price, productImg) {
+    let cartShopBox = document.createElement("div");
     cartShopBox.classList.add("cart-box");
-    var cartItems = document.getElementsByClassName("cart-content")[0];
-    var cartItemsNames = cartItems.getElementsByClassName("cart-product-title");
-    for(var i = 0; i < cartItemsNames.length; i++){
-        if(cartItemsNames[i].innerText == title){
+    let cartItems = document.getElementsByClassName("cart-content")[0];
+    let cartItemsNames = cartItems.getElementsByClassName("cart-product-title");
+    for (let cartItemName of cartItemsNames) {
+        if (cartItemName.innerText === title) {
             alert("You have already added this item to cart");
             return;
         }
     }
 
-    var cartBoxContent = `
+    let cartBoxContent = `
         <img src="${productImg}" alt="" class="cart-img">
         <div class="detail-box">
             <div class="cart-product-title">${title}</div>
@@ -98,29 +117,54 @@ function addProductToCart(title, price, productImg){
             <input type="number" value="1" class="cart-quantity">
         </div>
         <i class="fa-solid fa-circle-minus cart-remove"></i>`;
-    
+
     cartShopBox.innerHTML = cartBoxContent;
     cartItems.append(cartShopBox);
 
-    cartShopBox.getElementsByClassName("cart-remove")[0].addEventListener("click", removeCartItem);
-    cartShopBox.getElementsByClassName("cart-quantity")[0].addEventListener("change", quantityChanged);
+    cartShopBox.querySelector(".cart-remove").addEventListener("click", removeCartItem);
+    cartShopBox.querySelector(".cart-quantity").addEventListener("change", quantityChanged);
 }
 
-
-// update total
+// Update total
 function updateTotal() {
-    var cartContent = document.getElementsByClassName("cart-content")[0];
-    var cartBoxes = cartContent.getElementsByClassName("cart-box");
-    var total = 0;
-    for (var i = 0; i < cartBoxes.length; i++) {
-        var cartBox = cartBoxes[i];
-        var priceElement = cartBox.getElementsByClassName("cart-price")[0];
-        var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
-        var price = parseFloat(priceElement.innerText.replace("$", ""));
-        var quantity = quantityElement.value;
-        total = total + price * quantity;
-    }
-    document.getElementsByClassName("total-price")[0].innerText = "$" + total;
+    let cartContent = document.querySelector(".cart-content");
+    let cartBoxes = cartContent.querySelectorAll(".cart-box");
+    let total = 0;
+    cartBoxes.forEach(cartBox => {
+        let priceElement = cartBox.querySelector(".cart-price");
+        let quantityElement = cartBox.querySelector(".cart-quantity");
+        let price = parseFloat(priceElement.innerText.replace("$", ""));
+        let quantity = quantityElement.value;
+        total += price * quantity;
+    });
+    document.querySelector(".total-price").innerText = "$" + total.toFixed(2);
 }
 
+// Save cart to local storage
+function saveCartToLocalStorage() {
+    let cartContent = document.querySelector(".cart-content");
+    let cartBoxes = cartContent.querySelectorAll(".cart-box");
+    let cartItems = [];
+    cartBoxes.forEach(cartBox => {
+        let title = cartBox.querySelector(".cart-product-title").innerText;
+        let price = cartBox.querySelector(".cart-price").innerText;
+        let imgSrc = cartBox.querySelector(".cart-img").src;
+        let quantity = cartBox.querySelector(".cart-quantity").value;
+        cartItems.push({ title, price, imgSrc, quantity });
+    });
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+}
 
+// Load cart from local storage
+function loadCartFromLocalStorage() {
+    let cartItems = JSON.parse(localStorage.getItem("cartItems"));
+    if (cartItems) {
+        cartItems.forEach(item => {
+            addProductToCart(item.title, item.price, item.imgSrc);
+            let cartContent = document.querySelector(".cart-content");
+            let cartBoxes = cartContent.querySelectorAll(".cart-box");
+            cartBoxes[cartBoxes.length - 1].querySelector(".cart-quantity").value = item.quantity;
+        });
+    }
+    updateTotal();
+}

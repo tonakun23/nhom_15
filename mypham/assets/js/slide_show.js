@@ -1,44 +1,56 @@
 const listItems = document.querySelector('.list-items');
-const btnLeft= document.querySelector('.btn-left')
-const btnRight= document.querySelector('.btn-right')
+const btnLeft = document.querySelector('.btn-left');
+const btnRight = document.querySelector('.btn-right');
 
 const length = 3;
 let current = 0;
+const intervalTime = 4000;
+let handleEventChangeSlide;
 
-const widthInRem = 76.5;
-const handleChangeSlide = () =>{
-    if (current == length - 1) {
-        current = 0;
-        listItems.style.transform = `translateX(0rem)`; 
-        document.querySelector('.active4').classList.remove('active4')
-        document.querySelector('.index-item-'+ current).classList.add('active4')
-    } else {
-        current++;
-        listItems.style.transform = `translateX(${-widthInRem * current}rem)`;  
-        document.querySelector('.active4').classList.remove('active4')
-        document.querySelector('.index-item-'+ current).classList.add('active4')     
-    }
-}
-let handleEventChangeSlide = setInterval(handleChangeSlide, 4000);
+const updateSlidePosition = () => {
+    const itemWidth = listItems.children[0].offsetWidth;
+    const gap = parseInt(getComputedStyle(listItems).gap) || 0;
+    const totalWidth = itemWidth + gap;
+    listItems.style.transform = `translateX(${totalWidth * -1 * current}px)`;
+};
 
+const updateActiveClass = () => {
+    document.querySelector('.active4').classList.remove('active4');
+    document.querySelector(`.index-item-${current}`).classList.add('active4');
+};
+
+const handleChangeSlide = () => {
+    current = (current + 1) % length;
+    updateSlidePosition();
+    updateActiveClass();
+};
+
+const startAutoSlide = () => {
+    handleEventChangeSlide = setInterval(handleChangeSlide, intervalTime);
+};
+
+const resetAutoSlide = () => {
+    clearInterval(handleEventChangeSlide);
+    startAutoSlide();
+};
 
 btnRight.addEventListener('click', () => {
-    clearInterval(handleEventChangeSlide)
-    handleChangeSlide()
-    handleEventChangeSlide = setInterval(handleChangeSlide, 4000)
-})
+    resetAutoSlide();
+    handleChangeSlide();
+});
 
 btnLeft.addEventListener('click', () => {
-    clearInterval(handleEventChangeSlide)
+    resetAutoSlide();
     if (current === 0) {
         current = length - 1;
-        document.querySelector('.active4').classList.remove('active4')
-        document.querySelector('.index-item-'+ current).classList.add('active4') 
     } else {
         current--;
-        document.querySelector('.active4').classList.remove('active4')
-        document.querySelector('.index-item-'+ current).classList.add('active4') 
     }
-    listItems.style.transform = `translateX(${-widthInRem * current}rem)`;   
-    handleEventChangeSlide = setInterval(handleChangeSlide, 4000)
+    updateSlidePosition();
+    updateActiveClass();
 });
+
+// Initialize the slider
+updateSlidePosition();
+updateActiveClass();
+startAutoSlide();

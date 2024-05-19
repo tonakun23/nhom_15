@@ -14,43 +14,41 @@
 <body>
     <!-- header section start -->
     <header>
-            <a href="" class="logo"><img src="./assets/picture/header/logo.svg" alt=""></a>
-            <nav class="navbar" class="active">
-                <div>
-                    <a class="active1" href="#" class="sanpham" onclick="toggleSubnav(event)">sản phẩm</a>
-                    <ul class="subnav">
-                        <li><a class="active1" href="" class="sanpham">chăm sóc da</a></li>
-                        <li><a class="active1" href="" class="sanpham">chăm sóc cơ thể</a></li>
-                        <li><a class="active1" href="" class="sanpham">chăm sóc môi</a></li>
-                        <li><a class="active1" href="" class="sanpham">chăm sóc tóc</a></li>
-                    </ul>
-                </div>
-                <a href="" class="vechungtoi">về chúng tôi</a>
-                <a href="" class="tintuc">tin tức</a>
-            </nav>
-            <div class="action">
-                <i class="fas fa-bars" id="menu-bars"></i>
-                <img class="search" src="./assets/picture/header/search.svg" alt="">
-                <img class="bag" src="./assets/picture/header/account.svg" id="cart-icon" alt="">
-                <div class="cart">
-                    <!-- cart tiltel -->
-                    <h2 class="cart-title">Your Cart</h2>
-                    <!-- content -->
-                    <div class="cart-content">
-                    </div>
-                    <!-- total -->
-                    <div class="total">
-                        <div class="total-title">Total</div>
-                        <div class="total-price">$0</div>
-                    </div>
-                    <!-- buy button -->
-                        <button class="btn-buy">Buy Now</button>
-                        <!--cart close  -->
-                        <i class="fa-solid fa-x" id="close-cart"></i>
-                </div>
-                
-                <a href="sign_up.html"><img class="account" src="./assets/picture/header/bag.svg" alt=""></a>
+        <a href="" class="logo"><img src="./assets/picture/header/logo.svg" alt=""></a>
+        <nav class="navbar">
+            <div>
+                <a class="active1 sanpham" href="#" onclick="toggleSubnav(event)">sản phẩm</a>
+                <ul class="subnav">
+                    <li><a class="active1 sanpham" href="">chăm sóc da</a></li>
+                    <li><a class="active1 sanpham" href="">chăm sóc cơ thể</a></li>
+                    <li><a class="active1 sanpham" href="">chăm sóc môi</a></li>
+                    <li><a class="active1 sanpham" href="">chăm sóc tóc</a></li>
+                </ul>
             </div>
+            <a href="" class="vechungtoi">về chúng tôi</a>
+            <a href="" class="tintuc">tin tức</a>
+        </nav>
+        <div class="action">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <img class="search" src="./assets/picture/header/search.svg" alt="">
+            <img class="bag" src="./assets/picture/header/account.svg" id="cart-icon" alt="">
+            <div class="cart">
+                <!-- cart title -->
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content"></div>
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- buy button -->
+                <button class="btn-buy">Buy Now</button>
+                <!-- cart close -->
+                <i class="fa-solid fa-x" id="close-cart"></i>
+            </div>
+            <a href="sign_up.html"><img class="account" src="./assets/picture/header/bag.svg" alt=""></a>
+        </div>
     </header>
     <!-- search form -->
     <form action="" id="search-form">
@@ -67,62 +65,88 @@
             <div class="min_noidung">Đã chăm sóc da mặt thì chúng ta cũng phải quan tâm đến da cơ thể nữa đó, body chúng ta hằng ngày cũng đang "kêu cứu" nhiều lắm, hãy cùng Cocoon giải quyết các vấn đề của da yêu nhé!</div>
         </div>
         <div class="shop-content">
-            <!-- box1     -->
+            <!-- box1 -->
             <div class="product_box">
                 <img class="box1" src="./assets/picture/caphedaklak/bacafe.png" alt="">
-                <h2 class="product_title">CÀ PHÊ ĐẮK LẮK LÀM SẠCH DA CHẾT CƠ THỂ</h2>
-                <p class="price">$10</p>
-                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">CÀ PHÊ ĐẮK LẮK LÀM SẠCH DA CHẾT CƠ THỂ</h2>
+                    <p class="price">$10</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
             </div>
-            <!-- box2     -->
+            <!-- box2 -->
             <div class="product_box">
-                <img class="box1" src="./assets/picture/caphedaklak/tinhdau.png" alt="">
-                <h2 class="product_title">GEL TẮM KHUYNH DIỆP & BẠC HÀ</h2>
-                <p class="price">$65</p>
-                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+                <img class="box1 hinh2" src="./assets/picture/caphedaklak/tinhdau.png" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">GEL TẮM KHUYNH DIỆP & BẠC HÀ</h2>
+                    <p class="price">$65</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
             </div>
-            <!-- box3     -->
+            <!-- box3 -->
             <div class="product_box">
                 <img class="box1" src="./assets/picture/caphedaklak/tinhdaube.png" alt="">
-                <h2 class="product_title">SỮA DƯỠNG THỂ KHUYNH DIỆP & BẠC HÀ</h2>
-                <p class="price">$56</p>
-                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">SỮA DƯỠNG THỂ KHUYNH DIỆP & BẠC HÀ</h2>
+                    <p class="price">$65</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
             </div>
-            <!-- box4     -->
+            <!-- box4 -->
             <div class="product_box">
                 <img class="box1" src="./assets/picture/caphedaklak/boduong.png" alt="">
-                <h2 class="product_title">BƠ DƯỠNG THỂ CÀ PHÊ ĐẮK LẮK</h2>
-                <p class="price">$67</p>
-                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">BƠ DƯỠNG THỂ CÀ PHÊ ĐẮK LẮK</h2>
+                    <p class="price">$67</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
             </div>
-            <!-- box5     -->
+            <!-- box5 -->
             <div class="product_box">
                 <img class="box1" src="./assets/picture/caphedaklak/nuocrautay.png" alt="">
-                <h2 class="product_title">NƯỚC RỬA TAY KHÔ KHUYNH DIỆP VÀ BẠC HÀ</h2>
-                <p class="price">$54</p>
-                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">NƯỚC RỬA TAY KHÔ KHUYNH DIỆP VÀ BẠC HÀ</h2>
+                    <p class="price">$54</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
             </div>
-            <!-- box6     -->
+            <!-- box6 -->
             <div class="product_box">
-                <img  class="box1" src="./assets/picture/caphedaklak/geltay.png" alt="">
-                <h2 class="product_title">GEL TẮM BÍ ĐAO</h2>
-                <p class="price">$23</p>
-                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+                <img class="box1 hinh2" src="./assets/picture/caphedaklak/geltay.png" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">GEL TẮM BÍ ĐAO</h2>
+                    <p class="price">$23</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
             </div>
-            <!-- box7     -->
+            <!-- box7 -->
             <div class="product_box">
                 <img class="box1" src="./assets/picture/caphedaklak/combo1.png" alt="">
-                <h2 class="product_title">COMBO KHUYNH DIỆP & BẠC HÀ</h2>
-                <p class="price">$12</p>
-                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">COMBO KHUYNH DIỆP & BẠC HÀ</h2>
+                    <p class="price">$12</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
             </div>
-            <!-- box8     -->
+            <!-- box8 -->
             <div class="product_box">
                 <img class="box1" src="./assets/picture/caphedaklak/combo2.png" alt="">
-                <h2 class="product_title">COMBO BODY SẠCH MỤN </h2>
-                <p class="price">$32</p>
-                <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" alt="">
-            </div>            
+                <div class="product_info">
+                    <h2 class="product_title">COMBO BODY SẠCH MỤN</h2>
+                    <p class="price">$32</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
+            </div>
+
+                    
         </div>
         <div class="product_most">
             <h1 class="text_sp">SẢN PHẨM YÊU THÍCH</h1>

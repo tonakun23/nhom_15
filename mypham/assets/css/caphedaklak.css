@@ -69,20 +69,28 @@
     align-items: center;
     
 }
+.product_box .product_info p{
+    text-align: center;
+}
+.product_box .product_info{
+}
 .product_box:hover{
     padding: 10px;
     transition: 0.4s;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 25px;
 }
-.tang_them{
+.product_box .product_info .tang_them{
     width: 2.5rem;
-    margin-left: auto;
+    margin-left:80% ;
     cursor: pointer;
     transition: all 0.3s;
 }
 .tang_them:hover{
     content: url("/mypham/assets/picture/caphedaklak/tang_lendo.png");
+}
+#themvaogi{
+    display: none;
 }
 .box6{
     width: 160px;
@@ -92,6 +100,7 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     color: #700B0B;
+    
 }
 
 
@@ -99,7 +108,7 @@
 .cart{
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -120%;
     width: 360px;
     min-height: 100vh;
     padding: 20px;
@@ -230,4 +239,109 @@
 }
 .product_most{
     margin-bottom: 8rem;
+}
+.product_most_img{
+    overflow: hidden;
+}
+@media(max-width:768px){
+    .sanpham{
+        width: 94%;
+    }
+    .box1{
+        width: 20vw;
+        height: auto;
+    }
+    .btn-left{
+        left: 5rem;
+    }
+    .btn-right{
+        right: 5rem;
+    }
+    .hinh2{
+        width: 12vw;
+    }
+}
+
+@media(max-width:425px){
+    .wrapper .gioithieu .min_noidung{
+        width: 100vw;
+    }
+    .shop-content{
+        width: 100%;
+    }
+    .wrapper .shop-content .product_box{
+        display: flex;
+        flex-direction: row;
+        width: 99vw;
+        position: static;
+        justify-content: space-between;
+        align-items: start;
+        height: auto;
+        padding: 5%;
+        border-radius: 25px;
+        border: 12px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .box1{
+        width: 50%;
+        height: auto;
+    }
+    .hinh2{
+        width: 30vw;
+    }
+    .product_info{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+    }
+    .product_info p{
+        border: none;
+    }
+    .price{
+        font-size: 1.5rem;
+        border: none;
+    }
+    #dau-cong{
+        display: none;
+    }
+    .tang_them:hover{
+        content: none;
+    }
+    #themvaogi{
+        display: block;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        background-color: #D2AC62;
+        padding: 5%;
+    }
+    #themvaogi:hover{
+        background-color: chocolate;
+    }
+    .product_most{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .list-items{
+        width: 100vw;
+    }
+    .product_most_img{
+        width: 100%;
+    }
+    .btn{
+        border: 0.16rem solid;
+        border-radius: 10px;
+        background-color: rgba(128, 128, 128, 0.568);
+    }
+    .btn:hover{
+        background-color: rgba(128, 128, 128, 0.534);
+    }
+    .btn-left{
+        left: 15%;
+    }
+    .btn-right{
+        right: 13%;
+    }
 }

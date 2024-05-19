@@ -57,6 +57,11 @@
     display: flex;
     justify-content: center;
 }
+.itemsp:hover{
+    padding: 10px;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .mieuta {
     display: flex;
     justify-content: center;
@@ -135,7 +140,11 @@
     font-weight: 400;
     color: #3D0505;
 }
-
+.product_of_sanpham{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
 /* sản phẩm yêu thích */
 .product_most{
     margin-top: 14rem;
@@ -145,6 +154,7 @@
     justify-content: center;
     position: relative;
     width: 100vw;
+    margin-bottom: 1rem;
 }
 .text_sp{
     font-family: "Alatsi", sans-serif;
@@ -152,9 +162,9 @@
     font-weight: 400;
     text-align: center;
 }
+
 .product_most_img{
     width: 71rem;
-    overflow: hidden;
 }
 .list-items{
     display: flex;
@@ -167,6 +177,12 @@
     flex-direction: column;
     text-align: center;
     gap: 1rem;
+    transition: all 0.3s;
+}
+.item_like:hover{
+    padding: 5px;
+    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .item_like .ten_mostproduct{
     font-size: 1.25rem;
@@ -182,7 +198,7 @@
 
 /* khoang khac cung coocon */
 .many_aboutsp{
-    margin-top: 12.6875rem;
+    margin-top: 11.6875rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -231,7 +247,6 @@
     height: 27rem;
 }
 
-
 @media(max-width:768px){
     .sanpham_sp{
         display: flex;
@@ -255,5 +270,98 @@
         width: 100%;
     }
 
+}
+
+@media(max-width:425px){
+    .logo-sanpham{
+        margin-top: 10%;
+        display: block;
+        height: auto;
+        width: 30%;
+    }
+    .loicon{
+        margin-top: 0;
+    }
+    .thongbao h1{
+        font-size: 3rem;
+    }
+    .thachbidao{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 10%;
+    }
+    .content_bidao{
+        margin: 0;
+    }
+    .sanpham_sp{
+        width: 100vw;
+    }
+    .idsp{
+        font-size: 3rem;
+    }
+    .mieuta{
+        width: 60%;
+    }
+    .thachbidao_anh{
+        display: block;
+        height: auto;
+        width: 30%;
+        top: 20%;
+        right: 0;
+    }
+    .thachbidao2{
+        margin: auto;
+    }
+    .gift{
+        width: 20%;
+        top: -10%;
+        left: 10%;
+    }
+    .layout_bidao{
+        width: 70%;
+        margin: auto;
+        height: 20%;
+    }
+    .content_bidao{
+        width: 100%;
+        padding: 0 10% 10% 0;
+    }
+    .content_bidao .bidaoline1{
+        font-size: 2rem;
+    }
+    .content_bidao .bidaoline2{
+        font-size: 1rem;
+    }.item_like{
+        margin: auto;
+    }
+    .product_most{
+        width: 100%;
+    }
+    .product_of_sanpham{
+        display: block;
+        margin: auto;
+        width: 100vw;
+    }
+    .text_sp{
+        font-size: 2rem;
+    }
+    .many_aboutsp{
+        width: 100vw;
+        height: 40vh;
+    }
+    .khoangkhac{
+        width: 60%;
+    }
+    .many_aboutsp .khoangkhac img{
+        display: block;
+        width: 48%;
+        height: auto;
+    }
+    .many_aboutsp .khoangkhac .giua{
+        width: 40%;
+    }
 }
 

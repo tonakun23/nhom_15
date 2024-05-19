@@ -16,4 +16,5 @@ html{
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
+    background-color: #fff;
 }
