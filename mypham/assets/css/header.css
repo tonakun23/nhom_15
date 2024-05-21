@@ -10,6 +10,7 @@ header {
     /* border: solid black; */
     padding: 4.5rem 17% 0.6rem 17%;
     background-color: #fff;
+    
 }
 
 html{
@@ -103,7 +104,7 @@ header .action{
     cursor: pointer;
     margin-bottom: 0.45rem;
 }
-header .action i{
+header .action #menu-bars{
     display: none;
     cursor: pointer;
     font-size: 2.25rem;
@@ -269,7 +270,7 @@ header .action i{
     #search-form label{
         font-size: 186.5%;
     }
-    header .action i{
+    header .action #menu-bars{
         display: block;
     }
     header .navbar a:hover{

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sản phẩm chăm sóc da</title>
+    <link rel="stylesheet" href="./assets/css/resets.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/caphedaklak.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/sanpham.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <a href="" class="logo"><img src="./assets/picture/header/logo.svg" alt=""></a>
+        <nav class="navbar">
+            <div>
+                <a class="active1 sanpham" href="#" onclick="toggleSubnav(event)">sản phẩm</a>
+                <ul class="subnav">
+                    <li><a class="active1 sanpham" href="">chăm sóc da</a></li>
+                    <li><a class="active1 sanpham" href="">chăm sóc cơ thể</a></li>
+                    <li><a class="active1 sanpham" href="">chăm sóc môi</a></li>
+                    <li><a class="active1 sanpham" href="">chăm sóc tóc</a></li>
+                </ul>
+            </div>
+            <a href="" class="vechungtoi">về chúng tôi</a>
+            <a href="" class="tintuc">tin tức</a>
+        </nav>
+        <div class="action">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <img class="search" src="./assets/picture/header/search.svg" alt="">
+            <img class="bag" src="./assets/picture/header/account.svg" id="cart-icon" alt="">
+            <div class="cart">
+                <!-- cart title -->
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content"></div>
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- buy button -->
+                <button class="btn-buy">Buy Now</button>
+                <!-- cart close -->
+                <i class="fa-solid fa-x" id="close-cart"></i>
+            </div>
+            <a href="sign_up.html"><img class="account" src="./assets/picture/header/bag.svg" alt=""></a>
+        </div>
+    </header>
+    <!-- search form -->
+    <form action="" id="search-form">
+        <input type="search" name="" id="search-box" placeholder="Tìm kiếm">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- phan noi dung chinh -->
+    <section class="wrapper">
+        <img class="banner" src="./assets/picture/caphedaklak/banner.png" alt="">
+        <div class="gioithieu">
+            <h1>chăm sóc cơ thể</h1>
+            <div class="min_noidung">Đã chăm sóc da mặt thì chúng ta cũng phải quan tâm đến da cơ thể nữa đó, body chúng ta hằng ngày cũng đang "kêu cứu" nhiều lắm, hãy cùng Cocoon giải quyết các vấn đề của da yêu nhé!</div>
+        </div>
+        <div class="shop-content">
+            <!-- box1 -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/bacafe.png" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">CÀ PHÊ ĐẮK LẮK LÀM SẠCH DA CHẾT CƠ THỂ</h2>
+                    <p class="price">$10</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
+            </div>
+            <!-- box2 -->
+            <div class="product_box">
+                <img class="box1 hinh2" src="./assets/picture/caphedaklak/tinhdau.png" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">GEL TẮM KHUYNH DIỆP & BẠC HÀ</h2>
+                    <p class="price">$65</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
+            </div>
+            <!-- box3 -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/tinhdaube.png" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">SỮA DƯỠNG THỂ KHUYNH DIỆP & BẠC HÀ</h2>
+                    <p class="price">$65</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
+            </div>
+            <!-- box4 -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/boduong.png" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">BƠ DƯỠNG THỂ CÀ PHÊ ĐẮK LẮK</h2>
+                    <p class="price">$67</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
+            </div>
+            <!-- box5 -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/nuocrautay.png" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">NƯỚC RỬA TAY KHÔ KHUYNH DIỆP VÀ BẠC HÀ</h2>
+                    <p class="price">$54</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
+            </div>
+            <!-- box6 -->
+            <div class="product_box">
+                <img class="box1 hinh2" src="./assets/picture/caphedaklak/geltay.png" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">GEL TẮM BÍ ĐAO</h2>
+                    <p class="price">$23</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
+            </div>
+            <!-- box7 -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/combo1.png" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">COMBO KHUYNH DIỆP & BẠC HÀ</h2>
+                    <p class="price">$12</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
+            </div>
+            <!-- box8 -->
+            <div class="product_box">
+                <img class="box1" src="./assets/picture/caphedaklak/combo2.png" alt="">
+                <div class="product_info">
+                    <h2 class="product_title">COMBO BODY SẠCH MỤN</h2>
+                    <p class="price">$32</p>
+                    <img src="./assets/picture/caphedaklak/tang.png" class="tang_them" id="dau-cong" alt="">
+                    <div class="tang_them" id="themvaogi">THÊM VÀO GIỎ HÀNG</div>
+                </div>
+            </div>
+
+                    
+        </div>
+        <div class="product_most">
+            <h1 class="text_sp">SẢN PHẨM YÊU THÍCH</h1>
+            <div class="product_most_img">
+                <div class="list-items"> 
+                    <div class="item_like">
+                        <img src="./assets/picture/sanpham/caphe1.png" alt="">
+                        <h3 class="ten_mostproduct">COMBO LÀM SẠCH DA CHẾT TOÀN DIỆN TỪ CÀ PHÊ ĐẮK LẮK</h3>
+                        <h3 class="gia_most">318.000đ</h3>
+                    </div>
+                    <div class="item_like">
+                        <img src="./assets/picture/sanpham/caphe2.png" alt="">
+                        <h3 class="ten_mostproduct">COMBO 3 CÀ PHÊ ĐẮK LẮK LÀM SẠCH DA CHẾT CƠ THỂ</h3>
+                        <h3 class="gia_most">335.000đ</h3>
+                    </div>
+                    <div class="item_like">
+                        <img src="./assets/picture/sanpham/caphe3.png" alt="">
+                        <h3 class="ten_mostproduct">COMBO LÀM SẠCH DA VÀ DƯỠNG ẨM CƠ THỂ TỪ CÀ PHÊ ĐẮK LẮK</h3>
+                        <h3 class="gia_most">295.000đ</h3>
+                    </div>
+                    <div class="item_like">
+                        <img src="./assets/picture/sanpham/caphe1.png" alt="">
+                        <h3 class="ten_mostproduct">COMBO LÀM SẠCH DA CHẾT TOÀN DIỆN TỪ CÀ PHÊ ĐẮK LẮK</h3>
+                        <h3 class="gia_most">318.000đ</h3>
+                    </div>
+                    <div class="item_like">
+                        <img src="./assets/picture/sanpham/caphe1.png" alt="">
+                        <h3 class="ten_mostproduct">COMBO 3 CÀ PHÊ ĐẮK LẮK LÀM SẠCH DA CHẾT CƠ THỂ</h3>
+                        <h3 class="gia_most">335.000đ</h3>
+                    </div>
+                    <div class="item_like">
+                        <img src="./assets/picture/sanpham/caphe1.png" alt="">
+                        <h3 class="ten_mostproduct">COMBO LÀM SẠCH DA VÀ DƯỠNG ẨM CƠ THỂ TỪ CÀ PHÊ ĐẮK LẮK</h3>
+                        <h3 class="gia_most">295.000đ</h3>
+                    </div>
+                    <div class="item_like">
+                        <img src="./assets/picture/sanpham/caphe2.png" alt="">
+                        <h3 class="ten_mostproduct">COMBO LÀM SẠCH DA CHẾT TOÀN DIỆN TỪ CÀ PHÊ ĐẮK LẮK</h3>
+                        <h3 class="gia_most">318.000đ</h3>
+                    </div>
+                    <div class="item_like">
+                        <img src="./assets/picture/sanpham/caphe2.png" alt="">
+                        <h3 class="ten_mostproduct">COMBO 3 CÀ PHÊ ĐẮK LẮK LÀM SẠCH DA CHẾT CƠ THỂ</h3>
+                        <h3 class="gia_most">335.000đ</h3>
+                    </div>
+                    <div class="item_like">
+                        <img src="./assets/picture/sanpham/caphe2.png" alt="">
+                        <h3 class="ten_mostproduct">COMBO LÀM SẠCH DA VÀ DƯỠNG ẨM CƠ THỂ TỪ CÀ PHÊ ĐẮK LẮK</h3>
+                        <h3 class="gia_most">295.000đ</h3>
+                    </div>
+                </div>
+                    <div class="btns"> 
+                        <div class="btn-left btn"><i class="fa-solid fa-chevron-left"></i></div>
+                        <div class="btn-right btn"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                    <div class="index-items">
+                        <div class="index-item index-item-0 active4"></div>
+                        <div class="index-item index-item-1 "></div>
+                        <div class="index-item index-item-2 "></div>
+                        <div class="index-item index-item-3"></div>
+                        
+                    </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="noidung">
+            <img class="logo" src="./assets/picture/header/logo.svg" alt="">
+            <ul class="grid">
+                <li>
+                    <ul class="colum1">
+                        <li class="dong1">SẢN XUẤT TẠI CÔNG TY TNHH MỸ PHẨM NATURE STORY</li>
+                        <li class="">SỐ GPKD: 0313300273</li>
+                        <li class="">Phòng Đăng kí Kinh doanh - Sở kế hoạch và đầu tư <br>
+                         38C - 39C, khu phố 1, quốc lộ 1A, phường Tân Thới Hiệp, Quận 12, Tp.HCM, Việt Nam</li>
+                        <li class="">Điện thoại: 02838328228</li>
+                </ul>
+                </li>
+                <li>
+                    <ul class="colum2">
+                        <li class="">
+                            <ul class="lienhe1">
+                                <li><a href="">LIÊN HỆ</a></li>
+                                <li><a href="">ĐẠI LÍ</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="lienhe">
+                                <li><img src="./assets/picture/footer/phone.png" alt=""></li>
+                                <li class="sdt">028 3832 8228</li>
+                            </ul>
+                        </li>
+                        <li class="lienhe1"><a href="">HƯỚNG DẪN MUA HÀNG</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="colum3">
+                        <li><a href="">chính sách bảo mật</a></li>
+                        <li><a href="">chính sách đổi trả</a></li>
+                        <li><a href="">chính sách giao hàng</a></li>
+                    </ul>
+                </li>
+            </ul>
+                <div class="line"></div>
+                <ul class="dongcuoi">
+                    <li>
+                        <ul  class="icon_footer">
+                            <li><img class="face" src="./assets/picture/footer/iconface.png" alt=""></li>
+                            <li><img class="twiter" src="./assets/picture/footer/icontwit.png" alt=""></li>
+                            <li><img class="intas" src="./assets/picture/footer/iconintas.png" alt=""></li>
+                            <li><img class="ytb" src="./assets/picture/footer/iconytb.png" alt=""></li>
+                        </ul>
+                    </li>
+                    <li class="year_product">©2018 Cocoon</li>
+                    <li class="baohanh"><img src="./assets/picture/footer/congthuong.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        </footer>
+    </section>
+
+
+
+    <!-- phần js -->
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/caphedaklak.js"></script>
+    <script src="./assets/js/slide_show.js"></script>
+
+</body>
+</html>
+</body>
+</html>

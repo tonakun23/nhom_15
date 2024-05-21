@@ -1,0 +1,324 @@
+.noidung_tintuccon{
+    width: 70vw;
+    margin: auto;
+}
+img{
+    height: auto;
+    display: block;
+}
+.banner1 {
+    position: relative;
+    text-align: center;
+    font-family: "Alatsi", sans-serif;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+
+}
+.text-tintuccon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.banner1 img {
+    width: 100%;
+}
+.text-tintuccon1{
+    font-size: 3.125rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Alatsi", sans-serif;
+
+}
+.text-tintuccon2{
+    font-size: 1.54rem;
+    font-weight: 400;
+    
+}
+.banner2{
+    display: flex;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.banner2 img{
+    width: 50%;
+}
+.text-banner2{
+    font-size: 1.5rem;
+}
+.text-tintucconbanner2{
+    font-size: 1rem;
+}
+.text-tintuccon1con{
+    padding:2rem 9rem 9rem 9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.text-banner22{
+    padding-right: 6rem;
+    padding-left: 6rem;
+    margin-top: 7rem;
+}
+.text-banner2-1{
+    font-size: 2.2rem;
+    font-family: "Alatsi", sans-serif;
+    color: #ECC80D;
+}
+.banner-wrapper3{
+    position: relative;
+    margin-bottom: 45rem;
+}
+.banner3 {
+    position: relative;
+    text-align: center;
+    padding: 5rem;
+    background-color: #FBD79080;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    gap: 3rem;
+    margin-bottom: 5%;
+}
+
+.img-banner3 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; /* Center items horizontally */
+    top: 16rem;
+    gap: 5rem;
+    width: 100%; /* Ensure it takes full width to center the items */
+    position: absolute; /* Retain its absolute positioning */
+}
+
+.img-banner3 img {
+    width: 40%;
+}
+.banner4{
+    display: flex;
+    margin-bottom: 8rem;
+}
+.banner4 img{
+    width: 40%;
+}
+.text-tintuccon4con{
+    padding: 0 10% 10% 0 ;
+    text-align: center;
+}
+.logocon{
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+.logocon img{
+    width: 15%;
+}
+.plan-banner5{
+    width: 100%;
+}
+.banner5{
+    background-color: #FBD790;
+    position: static;
+}
+.banner7{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 10%;
+
+}
+.cot1banner7{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Chỉnh ảnh ra bên phải */
+    justify-content: flex-end;
+    gap: 3rem;
+    justify-content: space-between;
+    width: 30%;
+
+}
+.cot2banner7{
+    align-items: start;
+    width: 30%;
+}
+.picture1banner7{
+    width: 100%;
+}
+.picture2anner7{
+    width: 70%;
+}
+.linecontt{
+    width: 100%;
+    border-bottom:0.16rem solid #000000;
+    position: static;
+}
+.tinlienquan{
+    font-size: 1.5rem;
+    font-family: "Alatsi", sans-serif;
+    margin-bottom: 1%;
+
+}
+.tinlienquan1 a{
+    color: #000000;
+    font-family: "Alatsi", sans-serif;
+    font-size: 1rem;
+
+}
+.tinlienquan1{
+    margin-bottom: 1%;
+}
+.tinlienquan12{
+    font-family: "Alatsi", sans-serif;
+}
+.contenttintuc{
+    display: block;
+    margin-top: 4rem;
+    padding: 5% 0 0 5%;
+    padding-bottom: 10%;
+}
+
+
+
+
+
+
+
+@media(max-width:1024px){
+    .noidung_tintuccon{
+        width: 100vw;
+    }
+    .text-tintuccon{
+        width: 100%;
+    }
+    .text-tintuccon1{
+        font-size: 3rem;
+    }
+    .text-tintuccon1con{
+        padding: 0;
+    }
+    .text-tintucconbanner2{
+        font-size: 1.3rem;
+    }
+    .text-tintucbanner2{
+        padding: 0 3% 3% 0;
+    }
+    .text-banner22{
+        padding: 0 3% 3% 0;
+    }
+    .text-banner2-1{
+        font-size: 2rem;
+  
+    }
+    .img-banner3{
+        top:90%
+    }
+}
+
+@media(max-width:768px){
+    .noidung_tintuccon{
+        width: 100vw;
+    }
+    .text-tintuccon{
+        width: 90%;
+    }
+    .text-tintuccon1{
+        font-size: 3rem;
+    }
+    .text-tintuccon2{
+        font-weight: 500;
+    }
+    .text-tintuccon1con{
+        padding: 0 2% 4% 0;
+        gap: 1rem;
+    }
+    .banner2{
+        text-align: justify;
+    }
+    .text-tintucconbanner2{
+        font-size: 2rem;
+    }
+    .text-tintucbanner2{
+        padding: 0 2% 2% 0;
+    }
+    .text-banner22{
+        padding: 0;
+        text-align: center;
+    }
+    .text-banner2-1{
+        font-size: 2rem;
+    }
+    .img-banner3{
+        top: 26rem;
+    }
+    .banner3{
+        margin-bottom: 0;
+    }
+    .banner-wrapper3{
+        margin-bottom: 40%;
+    }
+    .banner5{
+        margin-bottom: 5%;
+    }
+    .tinlienquan{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:425px){
+    .noidung_tintuccon{
+        width: 100vw;
+    }
+    .text-tintuccon{
+        width: 100%;
+    }
+    .text-tintuccon1{
+        font-size: 1.3rem;
+    }
+    .text-tintuccon2{
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+    .text-tintuccon1con{
+        padding:0;
+        gap: 1rem;
+    }
+    .banner2{
+        text-align: justify;
+    }
+    .text-tintucconbanner2{
+        font-size: 1rem;
+    }
+    .text-tintucbanner2{
+        padding: 0 2% 2% 0;
+        font-size: 1.2rem;
+    }
+    .text-banner22{
+        padding: 0;
+        text-align: center;
+    }
+    .text-banner2-1{
+        font-size: 1rem;
+    }
+    .img-banner3{
+        top: 90%;
+    }
+    .banner3{
+        margin-bottom: 0;
+    }
+    .banner-wrapper3{
+        margin-bottom: 40%;
+    }
+    .banner5{
+        margin-bottom: 5%;
+    }
+    .tinlienquan{
+        font-size: 3rem;
+    }
+}
