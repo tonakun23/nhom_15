@@ -2,27 +2,25 @@ document.querySelector('.click_login').addEventListener('click', function() {
     var emailInput = document.querySelector('.input1[type="email"]').value;
     var passwordInput = document.querySelector('.input1[type="password"]').value;
 
-    // Kiểm tra xem có thông tin đầy đủ không
+    // Kiểm tra xem đã nhập đầy đủ thông tin hay chưa
     if (emailInput === '' || passwordInput === '') {
         alert('Vui lòng điền đầy đủ thông tin đăng nhập.');
-        return false; // Ngăn chặn việc gửi biểu mẫu
+        return false;
     }
 
-    // Kiểm tra xem thông tin đăng nhập có khớp với thông tin đăng ký hay không
-    var registeredEmail = localStorage.getItem('registeredEmail');
-    var registeredPassword = localStorage.getItem('registeredPassword');
-
-    if (emailInput === registeredEmail && passwordInput === registeredPassword) {
-        // Nếu thông tin đăng nhập khớp, chuyển hướng đến trang tin tức
-        window.location.href = 'tintuc.html';
+    // Lấy thông tin đăng ký từ localStorage
+    var userInfo = localStorage.getItem(emailInput);
+    if (userInfo) {
+        userInfo = JSON.parse(userInfo);
+        if (passwordInput === userInfo.password) {
+            // Đăng nhập thành công, chuyển hướng đến trang account.html
+            window.location.href = 'acount.html';
+        } else {
+            alert('Mật khẩu không chính xác. Vui lòng thử lại.');
+        }
     } else {
-        // Nếu không khớp, thông báo lỗi
-        alert('Tài khoản hoặc mật khẩu không đúng. Vui lòng thử lại.');
+        // Không tìm thấy email trong localStorage, chuyển hướng đến trang đăng ký
+        alert('Tài khoản không tồn tại. Vui lòng đăng ký.');
+        window.location.href = 'sign_up.html';
     }
 });
-
-// Lưu thông tin đăng ký vào localStorage
-var registeredEmail = 'example@gmail.com'; // Thay đổi thành email từ biểu mẫu đăng ký
-var registeredPassword = '123456'; // Thay đổi thành mật khẩu từ biểu mẫu đăng ký
-localStorage.setItem('registeredEmail', registeredEmail);
-localStorage.setItem('registeredPassword', registeredPassword);
