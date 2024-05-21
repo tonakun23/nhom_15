@@ -9,31 +9,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="stylesheet" href="./assets/css/footer.css">
      <link rel="stylesheet" href="./assets/css/tintuc.css">
+     <link href="https://fonts.googleapis.com/css2?family=Alatsi&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- header section start -->
     <header>
-            <a href="" class="logo"><img src="./assets/picture/header/logo.svg" alt=""></a>
-            <nav class="navbar" class="active">
-                <div>
-                    <a class="active1" href="" class="sanpham">sản phẩm</a>
-                    <ul class="subnav">
-                        <li><a class="active1" href="" class="sanpham">chăm sóc da</a></li>
-                        <li><a class="active1" href="" class="sanpham">chăm sóc cơ thể</a></li>
-                        <li><a class="active1" href="" class="sanpham">chăm sóc môi</a></li>
-                        <li><a class="active1" href="" class="sanpham">chăm sóc tóc</a></li>
-                    </ul>
-                </div>
-                <a href="" class="vechungtoi">về chúng tôi</a>
-                <a href="" class="tintuc">tin tức</a>
-            </nav>
-            <div class="action">
-                <i class="fas fa-bars" id="menu-bars"></i>
-                <img class="search" src="./assets/picture/header/search.svg" alt="">
-                <img class="bag" src="./assets/picture/header/account.svg" alt="">
-                <a href="sign_in.html"><img class="account" src="./assets/picture/header/bag.svg" alt=""></a>
+        <a href="" class="logo"><img src="./assets/picture/header/logo.svg" alt=""></a>
+        <nav class="navbar" class="active">
+            <div>
+                <a class="active1" href="#" class="sanpham" onclick="toggleSubnav(event)">sản phẩm</a>
+                <ul class="subnav">
+                    <li><a class="active1" href="sanpham.html" class="sanpham">chăm sóc da</a></li>
+                    <li><a class="active1" href="#" class="sanpham">chăm sóc cơ thể</a></li>
+                    <li><a class="active1" href="#" class="sanpham">chăm sóc môi</a></li>
+                    <li><a class="active1" href="#" class="sanpham">chăm sóc tóc</a></li>
+                </ul>
             </div>
-    </header>
+            <a href="" class="vechungtoi">về chúng tôi</a>
+            <a href="" class="tintuc">tin tức</a>
+        </nav>
+        <div class="action">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <img class="search" src="./assets/picture/header/search.svg" alt="">
+            <img class="bag" src="./assets/picture/header/account.svg" alt="">
+            <a href="sign_up.html"><img class="account" src="./assets/picture/header/bag.svg" alt=""></a>
+        </div>
+  </header>
     <!-- search form -->
     <form action="" id="search-form">
         <input type="search" name="" id="search-box" placeholder="Tìm kiếm">
@@ -56,7 +57,7 @@
    <section class="title_header_and_img">
     <div>
        <div class="text_title">
-           <b>Cocoon - Tiên phong xu hướng mỹ phẩm thuần chay tại Việt Nam</b>
+        <b style="font-family: 'Alatsi', sans-serif;">Cocoon - Tiên phong xu hướng mỹ phẩm thuần chay tại Việt Nam</b>
        </div>
        <div class="text_title_1">
         <p>Từ ngày 02/06, bên cạnh 24 “Điểm xanh” tại các chuỗi cửa hàng mỹ phẩm, Cocoon sẽ áp dụng thêm hình thức đổi vỏ chai online....</p>
@@ -66,10 +67,35 @@
     <div>
         <img  class="feedin_cocoon"   src="./assets/picture/login/feedin_cocoon.png" alt="">
     </div>
-    
+    <div class="background_color">
+        <div class="text_xemtiep" >XEM TIẾP</div>
+    </div>
    </section>
-   <section>
+
+
+   <section class="thongtin">
+    <div class="thongtin_sanpham">
+        <div class="matna">
+            <img src="./assets/picture/login/hoahong.png" alt="">
+            <br>
+            <h4 class="text_mana">Mặt nạ hoa hồng - Cấp ẩm và làm mềm da tức thì từ cánh hoa hồng tươi, pentavitin và HA</h4>
+            <br>
+            <p>Chúng tôi tin rằng, bí quyết để ngăn chặn tình trạng da mất nước không chỉ dừng lại ở việc cung cấp đầy đủ độ ẩm...</p>
+             
+        </div>
+
+        <div class="thachhoahonh">
+
+
+        </div>
+
+    </div>
+
+    <div class="Cocoon_tienphong">
+
+    </div>
     
+
    </section>
 
 

@@ -54,6 +54,7 @@ body {
 }
 
 .base {
+    transform: translateX(30%);
     width: 90%;
     max-width: 37.875rem; 
     margin: 2rem auto;
@@ -169,3 +170,28 @@ body {
         padding-top: 20px;
     }
 }
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .base img {
+      /* Keep existing properties */
+      width: 100%;
+      height: auto;
+      /* Add Pulse animation */
+      animation: pulse 2s infinite;
+  }
+
+    
