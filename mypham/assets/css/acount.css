@@ -1,0 +1,343 @@
+img {
+    height: auto;
+    display: block;
+}
+
+.wrapper-acount {
+    width: 66vw;
+    margin: auto;
+    font-family: "Open Sans",sans-serif;
+}
+
+/* .banner-acount start */
+.banner-acount {
+    margin-top: 13%;
+    position: relative;
+}
+
+.banner-acount img {
+    width: 100%;
+}
+.name-acount{
+    display: flex;
+    width: 16%;
+    padding: 0.4%;
+    border-radius: 25px;
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    background-color: #fff;
+    box-shadow: rgba(149, 157,165, 0.2) 0 9px 24px;
+    padding: 0.5%;
+    padding-left: 1%;
+}
+.dangxuat{
+    font-size:1.125rem ;
+    color: #000000;
+    font-family: "open sans", sans-serif;
+    font-weight: 700;
+}
+.dangxuat1{
+    font-size:1.125rem ;
+    color: #757169CC;
+    font-family: "open sans", sans-serif;
+    font-weight: 700;
+    
+}
+.text-giohang{
+    font-family: "open sans", sans-serif;
+    font-weight: 700; 
+    font-size: 2rem;
+}
+.thongbao-acount {
+    display: flex;
+    justify-content: center; /* Canh giữa nội dung ngang */
+    align-items: center; /* Canh giữa nội dung dọc */
+    width: 50px; /* Bạn có thể điều chỉnh kích thước */
+    height: 50px; /* Bạn có thể điều chỉnh kích thước */
+    border-radius: 50%; /* Tạo hình tròn */
+    position: absolute;
+    top: 70%;
+    right: 2%;
+    background-color: #fff;
+    box-shadow: rgba(33, 34, 34, 0.2) 0 8px 24px;
+    margin-right: 6px;
+
+}
+
+.thongbao-acount img {
+    width: 50%;
+    height: auto;
+    border: none;
+}
+.name-acount-id img{
+    width: 80%;
+}
+.name-acount-id{
+    position: static;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.menu-acount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+.action-acount{
+    border: 1px solid #D9B799;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    border-radius: 5px;
+    padding: 1%;
+}
+.ten-menu-acount{
+    font-family: "open sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+ 
+}
+.action-acount img{
+    margin: auto;
+}
+.action-acount-donhang{
+    background-color: #D2AC62;
+    color: #fff;
+    font-weight: 700;
+}
+.scoll-bar{
+    width: 93%;
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-bottom: 10%;
+}
+
+.chonmua{
+    display: flex;
+    align-items: center;
+}
+.chonmua-sp{
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 5px solid #D2AC62;
+}
+.chonmua-sp:hover{
+    background-color: #D2AC62;
+
+}
+.chonmua-sp:hover + .sanpham-acount{
+    background-color: #F4F4F4;
+}
+.chonmua-sp:hover + .sanpham-acount .xoa{
+    content: url("../picture/acount/xdo.png");
+}
+.sanpham-acount{
+    display: flex;
+    padding: 2%;
+}
+.sanpham-acount img{
+    width: 20%;
+}
+.content-sp-acount{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 2%;
+}
+.cont1{
+    font-size: 2rem;
+    font-family: "Open Sans",sans-serif;
+    color: #700B0B;
+    font-weight: 700;
+}
+.ghichu{
+    font-size:1.25rem ;
+    font-weight: 400;
+}
+.gia-sp-acount{
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.xoa-sp-acount{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20%;
+}
+.xoa-sp-acount .xoa{
+    width: 100%;
+}
+.soluong-acount{
+    display: flex;
+    background-color: #D2AC62;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.acount-price{
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    border-top: 1px solid #E6E6E6;
+    padding: 3%;
+}
+.acount-price img{
+    width: 5%;
+}
+.content-text-price{
+    font-size: 1.9rem;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 700;
+}
+.thanhtoan-acount{
+    display: block;
+    background-color: #D2AC62;
+    color: #fff;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    padding: 1% 1.8% 1% 1.8%;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: auto;
+    margin-bottom: 10%;
+}
+.thanhtoan-acount:hover{
+    background-color: #D9B799;
+}
+.history-acount{
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+.history-sp-acount{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 3px 3px;
+    width: 45%;
+    border-radius: 30px;
+    padding: 1%;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3%;
+}
+.history-don{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #C8C0AE;
+    width: 4rem;
+    height: 4rem;
+    padding: 1%;
+    border-radius: 50%;
+    
+}
+.history-don img{
+    width: 1.5rem;
+}
+.giadonhang{
+    font-size: 1.25rem;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 400;
+}
+.chitiet{
+    color: #00000099;
+    margin-left: auto;
+    width: fit-content;
+}
+
+
+@media(max-width:1024px){
+    .wrapper-acount{
+        width: 80vw;
+    }
+    .name-acount{
+        width: 20%;
+    }
+    .thongbao-acount{
+        width: 40px;
+        height: 40px;
+    }
+    .action-acount{
+        width: 25%;
+        height: 70px;
+    }
+
+}
+@media(max-width:425px){
+    *{
+        overflow-x: hidden;
+    }
+    .wrapper-acount{
+        width: 90vw;
+    }
+    .name-acount{
+        width: 40%;
+        top: 50%;
+    }
+    .thongbao-acount{
+        width: 20px;
+        height: 20px;
+        top: 50%;
+    }
+    .thongbao-acount img{
+        width: 10px;
+    }
+    .scoll-bar{
+        height: 30vh;
+    }
+    .action-acount{
+        height: 40px;
+        width: 70px;
+
+    }
+    .action-acount img{
+        width: 30%;
+    }
+    .ten-menu-acount{
+        font-size: 6px;
+    }
+    .sanpham-acount img{
+        width: 70px;
+        height: auto;
+        
+    }
+    .cont1{
+        font-size: 10px;
+    }
+    .ghichu{
+        font-size: 7px;
+    }
+    .gia-sp-acount{
+        font-size: 9px;
+    }
+    .history-sp-acount{
+        width: 70%;
+    }
+
+}
+@media(max-width:375px){
+    .name-acount{
+        width:28% ;
+    }
+    .history-sp-acount{
+        width: 78%;
+    }
+}
+@media(max-width:320px){
+    .history-sp-acount{
+        width: 90%;
+    }
+}

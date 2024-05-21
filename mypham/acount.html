@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài khoản cá nhân</title>
+    <link rel="stylesheet" href="./assets/css/resets.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/caphedaklak.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/acount.css">
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <a href="" class="logo"><img src="./assets/picture/header/logo.svg" alt=""></a>
+        <nav class="navbar">
+            <div>
+                <a class="active1 sanpham" href="#" onclick="toggleSubnav(event)">sản phẩm</a>
+                <ul class="subnav">
+                    <li><a class="active1 sanpham" href="caphedaklak.html">chăm sóc da</a></li>
+                    <li><a class="active1 sanpham" href="">chăm sóc cơ thể</a></li>
+                    <li><a class="active1 sanpham" href="">chăm sóc môi</a></li>
+                    <li><a class="active1 sanpham" href="">chăm sóc tóc</a></li>
+                </ul>
+            </div>
+            <a href="" class="vechungtoi">về chúng tôi</a>
+            <a href="tintuc.html" class="tintuc">tin tức</a>
+        </nav>
+        <div class="action">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <img class="search" src="./assets/picture/header/search.svg" alt="">
+            <img class="bag" src="./assets/picture/header/account.svg" id="cart-icon" alt="">
+            <div class="cart">
+                <!-- cart title -->
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content"></div>
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- buy button -->
+                <button class="btn-buy">Buy Now</button>
+                <!-- cart close -->
+                <i class="fa-solid fa-x" id="close-cart"></i>
+            </div>
+            <a href="acount.html"><img class="account" src="./assets/picture/header/bag.svg" alt=""></a>
+        </div>
+    </header>
+    <!-- search form -->
+    <form action="" id="search-form">
+        <input type="search" name="" id="search-box" placeholder="Tìm kiếm">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- phan noi dung chinh -->
+    <section class="wrapper-acount">  
+        <div class="banner-acount">
+            <div class="acount-picture">
+                <img src="./assets/picture/acount/banner-acount.png" alt="">
+                <div class="acount-1">
+                    <div class="name-acount">
+                        <div class="name-acount-id thongbao-acount"> <img src="./assets/picture/acount/my.png" alt=""></div>
+                    <div>
+                        <div class="dangxuat">my</div>
+                        <div class="dangxuat1">Đăng xuất</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thongbao-acount"> <img src="./assets/picture/acount/thongbao.png" alt=""> </div>
+        </div>
+        <h3 class="dangxuat1">lần cuối bạn đăng nhập là ngày 20/11/2021</h3>
+        <div class="menu-acount">
+            <div class="action-acount action-acount-donhang">
+                <img src="./assets/picture/acount/donhang.png" alt="">
+                <span class="ten-menu-acount">Đơn hàng</span>
+            </div>
+            <div class="action-acount">
+                <img src="./assets/picture/acount/khuyenmai.png" alt="">
+                <span class="ten-menu-acount">Khuyến mãi</span>
+            </div>
+            <div class="action-acount">
+                <img src="./assets/picture/acount/yeuthich.png" alt="">
+                <span class="ten-menu-acount">Sản phẩm yêu thích</span>
+            </div>
+            <div class="action-acount">
+                <img src="./assets/picture/acount/vanchuyen.png" alt="">
+                <span class="ten-menu-acount">Vận chuyển</span>
+            </div>
+        </div>
+        <h3 class="text-giohang">Giỏ hàng</h3>
+        <div class="scoll-bar">
+            <div class="chonmua">
+                <div class="chonmua-sp"></div>
+                <div class="sanpham-acount">
+                    <img src="./assets/picture/acount/caphe.png" alt="">
+                    <div class="content-sp-acount">
+                        <div class="cont1">Combo 3 Cà phê Đắk Lắk làm sạch da chết cơ thể</div>
+                        <div class="ghichu">Sản phẩm tạm hết hàng</div>
+                        <div class="gia-sp-acount">335,000đ</div>
+                    </div>
+                    <div class="xoa-sp-acount">
+                        <img class="xoa" src="./assets/picture/acount/notxoaxam.png" alt="">
+                        <div class="soluong-sp-acount">
+                            <div class="soluong-acount">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chonmua">
+                <div class="chonmua-sp"></div>
+                <div class="sanpham-acount">
+                    <img src="./assets/picture/acount/caphe.png" alt="">
+                    <div class="content-sp-acount">
+                        <div class="cont1">Combo 3 Cà phê Đắk Lắk làm sạch da chết cơ thể</div>
+                        <div class="ghichu">Sản phẩm tạm hết hàng</div>
+                        <div class="gia-sp-acount">335,000đ</div>
+                    </div>
+                    <div class="xoa-sp-acount">
+                        <img class="xoa" src="./assets/picture/acount/notxoaxam.png" alt="">
+                        <div class="soluong-sp-acount">
+                            <div class="soluong-acount">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chonmua">
+                <div class="chonmua-sp"></div>
+                <div class="sanpham-acount">
+                    <img src="./assets/picture/acount/caphe.png" alt="">
+                    <div class="content-sp-acount">
+                        <div class="cont1">Combo 3 Cà phê Đắk Lắk làm sạch da chết cơ thể</div>
+                        <div class="ghichu">Sản phẩm tạm hết hàng</div>
+                        <div class="gia-sp-acount">335,000đ</div>
+                    </div>
+                    <div class="xoa-sp-acount">
+                        <img class="xoa" src="./assets/picture/acount/notxoaxam.png" alt="">
+                        <div class="soluong-sp-acount">
+                            <div class="soluong-acount">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chonmua">
+                <div class="chonmua-sp"></div>
+                <div class="sanpham-acount">
+                    <img src="./assets/picture/acount/caphe.png" alt="">
+                    <div class="content-sp-acount">
+                        <div class="cont1">Combo 3 Cà phê Đắk Lắk làm sạch da chết cơ thể</div>
+                        <div class="ghichu">Sản phẩm tạm hết hàng</div>
+                        <div class="gia-sp-acount">335,000đ</div>
+                    </div>
+                    <div class="xoa-sp-acount">
+                        <img class="xoa" src="./assets/picture/acount/notxoaxam.png" alt="">
+                        <div class="soluong-sp-acount">
+                            <div class="soluong-acount">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chonmua">
+                <div class="chonmua-sp"></div>
+                <div class="sanpham-acount">
+                    <img src="./assets/picture/acount/caphe.png" alt="">
+                    <div class="content-sp-acount">
+                        <div class="cont1">Combo 3 Cà phê Đắk Lắk làm sạch da chết cơ thể</div>
+                        <div class="ghichu">Sản phẩm tạm hết hàng</div>
+                        <div class="gia-sp-acount">335,000đ</div>
+                    </div>
+                    <div class="xoa-sp-acount">
+                        <img class="xoa" src="./assets/picture/acount/notxoaxam.png" alt="">
+                        <div class="soluong-sp-acount">
+                            <div class="soluong-acount">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chonmua">
+                <div class="chonmua-sp"></div>
+                <div class="sanpham-acount">
+                    <img src="./assets/picture/acount/caphe.png" alt="">
+                    <div class="content-sp-acount">
+                        <div class="cont1">Combo 3 Cà phê Đắk Lắk làm sạch da chết cơ thể</div>
+                        <div class="ghichu">Sản phẩm tạm hết hàng</div>
+                        <div class="gia-sp-acount">335,000đ</div>
+                    </div>
+                    <div class="xoa-sp-acount">
+                        <img class="xoa" src="./assets/picture/acount/notxoaxam.png" alt="">
+                        <div class="soluong-sp-acount">
+                            <div class="soluong-acount">0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="acount-price">
+            <div class="content-text-price">Mã giảm giá</div>
+            <img src="./assets/picture/acount/voucher.png" alt="">
+        </div>
+        <div class="acount-price">
+            <div class="content-text-price">Tổng tiền</div>
+            <div class="content-text-price">345.000đ</div>
+        </div>
+        <div class="acount-price">
+            <div class="thanhtoan-acount">Thanh toán</div>
+        </div>
+        <h3 class="content-text-price">Lịch sử đặt hàng</h3>
+        <div class="history-acount">
+            <div class="history-sp-acount">
+                <div class="history-don"> <img src="./assets/picture/acount/donhang.png" alt=""></div>
+                <div class="content-acount-history">
+                    <div class="content-text-price">Đơn hàng #20118323811VN</div>
+                    <div class="giadonhang">Tổng giá trị: 1,230,000đ</div>
+                    <div class="giadonhang chitiet">Chi tiết</div>
+                </div>
+            </div>
+            <div class="history-sp-acount">
+                <div class="history-don"> <img src="./assets/picture/acount/donhang.png" alt=""></div>
+                <div class="content-acount-history">
+                    <div class="content-text-price">Đơn hàng #20118323811VN</div>
+                    <div class="giadonhang">Tổng giá trị: 1,230,000đ</div>
+                    <div class="giadonhang chitiet">Chi tiết</div>
+                </div>
+            </div>
+            <div class="history-sp-acount">
+                <div class="history-don"> <img src="./assets/picture/acount/donhang.png" alt=""></div>
+                <div class="content-acount-history">
+                    <div class="content-text-price">Đơn hàng #20118323811VN</div>
+                    <div class="giadonhang">Tổng giá trị: 1,230,000đ</div>
+                    <div class="giadonhang chitiet">Chi tiết</div>
+                </div>
+            </div>
+            <div class="history-sp-acount">
+                <div class="history-don"> <img src="./assets/picture/acount/donhang.png" alt=""></div>
+                <div class="content-acount-history">
+                    <div class="content-text-price">Đơn hàng #20118323811VN</div>
+                    <div class="giadonhang">Tổng giá trị: 1,230,000đ</div>
+                    <div class="giadonhang chitiet">Chi tiết</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="noidung">
+        <img class="logo" src="./assets/picture/header/logo.svg" alt="">
+        <ul class="grid">
+            <li>
+                <ul class="colum1">
+                    <li class="dong1">SẢN XUẤT TẠI CÔNG TY TNHH MỸ PHẨM NATURE STORY</li>
+                    <li class="">SỐ GPKD: 0313300273</li>
+                    <li class="">Phòng Đăng kí Kinh doanh - Sở kế hoạch và đầu tư <br>
+                     38C - 39C, khu phố 1, quốc lộ 1A, phường Tân Thới Hiệp, Quận 12, Tp.HCM, Việt Nam</li>
+                    <li class="">Điện thoại: 02838328228</li>
+            </ul>
+            </li>
+            <li>
+                <ul class="colum2">
+                    <li class="">
+                        <ul class="lienhe1">
+                            <li><a href="">LIÊN HỆ</a></li>
+                            <li><a href="">ĐẠI LÍ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="lienhe">
+                            <li><img src="./assets/picture/footer/phone.png" alt=""></li>
+                            <li class="sdt">028 3832 8228</li>
+                        </ul>
+                    </li>
+                    <li class="lienhe1"><a href="">HƯỚNG DẪN MUA HÀNG</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="colum3">
+                    <li><a href="">chính sách bảo mật</a></li>
+                    <li><a href="">chính sách đổi trả</a></li>
+                    <li><a href="">chính sách giao hàng</a></li>
+                </ul>
+            </li>
+        </ul>
+            <div class="line"></div>
+            <ul class="dongcuoi">
+                <li>
+                    <ul  class="icon_footer">
+                        <li><img class="face" src="./assets/picture/footer/iconface.png" alt=""></li>
+                        <li><img class="twiter" src="./assets/picture/footer/icontwit.png" alt=""></li>
+                        <li><img class="intas" src="./assets/picture/footer/iconintas.png" alt=""></li>
+                        <li><img class="ytb" src="./assets/picture/footer/iconytb.png" alt=""></li>
+                    </ul>
+                </li>
+                <li class="year_product">©2018 Cocoon</li>
+                <li class="baohanh"><img src="./assets/picture/footer/congthuong.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+
+
+
+    <!-- phần js -->
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/caphedaklak.js"></script>
+    <script src="./assets/js/slide_show.js"></script>
+
+</body>
+</html>
+</body>
+</html>
