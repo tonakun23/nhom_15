@@ -20,6 +20,7 @@ body {
     background-color: #FFFFFF;
     min-height: 36.3rem;
     border-radius: 5px;
+    transform: translateX(-36%);
 }
 
 .sign_up {
@@ -41,6 +42,17 @@ body {
     outline: none;
     border-color: #D09A59;
 }
+
+.toggle-password {
+    position: absolute;
+    top: 42%;
+    right: 10px; /* Adjust distance from right edge as needed */
+    transform: translateY(-60%);
+    cursor: pointer;
+    color: #999;
+
+    
+  }
 
 .base {
     width: 90%;
@@ -130,24 +142,54 @@ body {
     padding-top: 11px;
 }
 
+.password-container {
+    position: relative;
+  }
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7; /* Adjust the opacity value as needed */
+    z-index: 99;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 2); /* Màu đen với độ mờ */
+    z-index: 99; /* Đảm bảo overlay nằm trên các thành phần khác nhưng dưới popup */
+}
 .font_weight {
-    font-weight: 700;
+     font-weight: 700;
+     margin-left: -180%;
+
 }
 
-    .success-popup {
-        display: none; /* Initially hidden */
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #c72222;
-        color: white;
-        padding: 20px;
-        border-radius: 10px;
-        z-index: 100;
-        text-align: center; /* Center the text */
-        width: 500px; /* Adjust width as needed */
-    }
+    
+.success-popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 37%;
+    transform: translate(-50%, 100%);
+    background-color: #c72222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 100; /* Đảm bảo popup nằm trên cả overlay */
+    text-align: center;
+    width: 500px;
+     
+}
 
     .success-popup img {
         display: block;
@@ -190,3 +232,42 @@ body {
         }
 
     }
+    
+    @keyframes zoomIn {
+        from {
+            transform: scale(0);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    .success-popup {
+        /* Keep other properties */
+        animation: zoomIn 0.7s ease-in-out forwards;
+    }
+
+    @keyframes pulse {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.05);
+          opacity: 0.9;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      
+      .base img {
+          /* Keep existing properties */
+          width: 100%;
+          height: auto;
+          /* Add Pulse animation */
+          animation: pulse 2s infinite;
+      }
