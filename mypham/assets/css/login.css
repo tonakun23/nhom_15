@@ -79,7 +79,16 @@ body {
     line-height: 40px;
     border-radius: 3px;
     order: 6;
+    transition: all 0.3s ease;
 
+}
+
+.click_login:hover {
+    background-color: #BB6B2A; /* Màu nền mới khi hover */
+    color: #FFF; /* Đổi màu chữ nếu cần */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Tạo bóng đổ để nổi bật */
+    transform: translateY(-2px); /* Di chuyển lên một chút để tạo cảm giác nổi */
+    transition: all 0.3s ease; /* Làm cho sự chuyển đổi mượt mà */
 }
 
 .font_weight {
