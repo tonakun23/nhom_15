@@ -162,21 +162,96 @@ body {
 .pading_top {
     padding-top: 50px;
 }
-
-@media(max-width: 768px) {
+@media(max-width: 1024px){
+    .base{
+        transform: translateX(0%);
+    }
+    .base{
+        width: 50%;
+    }
     .main_login {
         display: flex; 
         justify-content: center;
         align-items: center;
-        min-height: 100vh;  
+        overflow-y: hidden;
+        height: 60%;
     }
 
     .login_page {
-        width: auto; 
+        height: 60%;
+        width: 50%; 
         margin: 0;
         padding: 1rem;
         box-sizing: border-box;
-        padding-top: 20px;
+        margin-bottom: 80px;
+        margin-right: 10px;
+    }
+    .login{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .divider-text{
+        font-size: 16px;
+    }
+    .remember-me{
+        font-size: 15px;
+    }
+    .text_pading{
+        display: none;
+    }
+    .link_signup{
+        padding-top: 40px;
+    }
+    .color_text{
+        font-size: 18px;
+    }
+    a,
+    .link_signup p{
+        font-size: 13px;
+    }
+}
+@media(max-width: 425px) {
+    .base{
+        transform: translateX(0%);
+    }
+    .base{
+        width: 70%;
+    }
+    .main_login {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+        height: 60%;
+    }
+
+    .login_page {
+        height: 60%;
+        width: 90%; 
+        margin: 0;
+        padding: 1rem;
+        box-sizing: border-box;
+        margin-bottom: 80px;
+    }
+    .login{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    .divider-text{
+        font-size: 16px;
+    }
+    .remember-me{
+        font-size: 15px;
+    }
+    .text_pading{
+        display: none;
+    }
+    .link_signup{
+        padding-top: 40px;
+    }
+    a,
+    .link_signup p{
+        font-size: 13px;
     }
 }
 
@@ -202,5 +277,3 @@ body {
       /* Add Pulse animation */
       animation: pulse 2s infinite;
   }
-
-    

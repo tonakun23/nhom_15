@@ -223,7 +223,49 @@ body {
         cursor: pointer;
     }
 
+@media(max-width: 1024px){
+    .sign_up_page {
+        transform: translateX(-6%);
+    }
+}
+    @media(max-width: 425px) {
+        .main_sign_up{
+            width: 100vw;
+        }
+        .base{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+        .base img{
+            width: 40%;
+            margin: auto;
 
+        }
+        .main_sign_up {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+        }
+    
+        .sign_up_page {
+            width: 80%;
+            margin: 0;
+            padding: 1rem;
+            transform: translateX(0%);
+
+        }
+        .font_weight{
+            margin-left: 10px;
+            margin-right: 60px;
+        }
+        .color_text{
+            font-size: 14px;
+        }
+    }
+    
     @media(max-width: 768px) {
         .main_sign_up {
             display: flex;
