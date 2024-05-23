@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Save to localStorage as a simple example (email as key)
     localStorage.setItem(emailInput, JSON.stringify({name: nameInput, password: passwordInput, phone: phoneInput}));
-    alert('Đăng ký thành công!');
+    
     closePopup(); // Nếu tất cả điều kiện đều được thoả mãn thì đóng popup
   });
 

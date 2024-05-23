@@ -122,13 +122,16 @@
       </div>
     </section>
 
-    <div class="success-popup">
-      <h3>Đăng ký thành công</h3>
-      <p>Cám ơn bạn đã đăng ký tài khoản của Cocoon</p>
-      <button type="button" onclick="closePopup()">
-        <a href="login.html">VỀ TRANG CHỦ</a>
-      </button>
-    </div>
+    <div class="overlay"></div>
+
+<div class="success-popup">
+  <div class="popup-content">
+    <img src="./assets/picture/login/frame.png" alt="Success">
+    <h3>Đăng ký thành công</h3>
+    <p>Cám ơn bạn đã đăng ký tài khoản của Cocoon</p>
+    <button id="confirmButton" type="button">VỀ TRANG CHỦ</button>
+  </div>
+</div>
 
     <!-- Link to the success popup script -->
     <script src="./assets/js/successfully.js"></script>
