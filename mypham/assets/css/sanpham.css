@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Offside&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Offside&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+header .navbar a.active-sp{
+    text-decoration: underline rgba(122, 119, 119, 0.589);    
+}
 .noidung_sanpham{
     display: flex;
     justify-content: center;
