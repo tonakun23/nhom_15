@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocoon Policies</title>
+    <link rel="stylesheet" href="./assets/css/resets.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="./assets/css/footer.css">
+     <link rel="stylesheet" href="./assets/css/tintuc.css">
+     <link rel="stylesheet" href="./assets/css/chsach.css">
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+            <a href="landing_page.html" class="logo"><img src="./assets/picture/header/logo.svg" alt=""></a>
+            <nav class="navbar" class="active">
+                <div>
+                    <a class="active1" href="" class="sanpham">sản phẩm</a>
+                    <ul class="subnav">
+                        <li><a class="active1" href="" class="sanpham">chăm sóc da</a></li>
+                        <li><a class="active1" href="" class="sanpham">chăm sóc cơ thể</a></li>
+                        <li><a class="active1" href="" class="sanpham">chăm sóc môi</a></li>
+                        <li><a class="active1" href="" class="sanpham">chăm sóc tóc</a></li>
+                    </ul>
+                </div>
+                <a href="" class="vechungtoi">về chúng tôi</a>
+                <a href="" class="tintuc">tin tức</a>
+            </nav>
+            <div class="action">
+                <i class="fas fa-bars" id="menu-bars"></i>
+                <img class="search" src="./assets/picture/header/search.svg" alt="">
+                <img class="bag" src="./assets/picture/header/account.svg" alt="">
+                <a href="sign_in.html"><img class="account" src="./assets/picture/header/bag.svg" alt=""></a>
+            </div>
+    </header>
+    <body>
+        <div class="policy-container">
+            <div class="policy-header-bar">CHÍNH SÁCH</div>
+            <div class="policy-header">
+                <button class="policy-button">CHÍNH SÁCH GIAO HÀNG</button>
+                <button class="policy-button active">CHÍNH SÁCH ĐỔI TRẢ</button>
+                <button class="policy-button">CHÍNH SÁCH BẢO MẬT</button>
+            </div>
+            <div class="policy-content">
+                <h2>Chính sách đổi trả</h2>
+                <p>Quý khách vui lòng kiểm tra kỹ sản phẩm và so sánh với đơn hàng khi nhận hàng. Sau khi nhận hàng, chúng tôi không giải quyết các trường hợp đổi trả sản phẩm. Nếu phát hiện sản phẩm bị hư hỏng do quá trình vận chuyển, xin vui lòng gọi vào hotline:</p>
+                <p>028 38323828 và gửi hình sản phẩm đến fanpage của Fanpage CocoonVietnam <a href="https://www.facebook.com/CocoonVietnam" target="_blank">www.facebook.com/CocoonVietnam</a> để chúng tôi kiểm tra tình trạng hàng hóa mà khách nhận được thực tế.</p>
+                <p>Quý khách lưu ý không nhận hàng và báo lại với đơn hàng không đúng hoặc có hiện tượng va đập, rách bao hoặc dịch vụ không đúng.</p>
+                <p>Sau khi sản phẩm đã được bán và bàn giao, chúng tôi tiến hành đổi sản phẩm khác cho khách hàng trong vòng 7 ngày làm việc.</p>
+                
+                <h2>Chính sách bảo hành</h2>
+                <p>Trong quá trình sử dụng nếu có vấn đề kỹ thuật, quý khách vui lòng inbox trên fanpage CocoonVietnam <a href="https://www.facebook.com/CocoonVietnam" target="_blank">www.facebook.com/CocoonVietnam</a> hoặc gọi điện hotline: 028 38323828 (8h - 18h)</p>
+                <p>Nếu vấn đề của quý khách đã được chúng tôi giải quyết trong vòng 24h làm việc.</p>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function showPolicy(policy) {
+            const contents = document.querySelectorAll('.policy-content');
+            contents.forEach(content => content.style.display = 'none');
+
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            document.getElementById(policy).style.display = 'block';
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
