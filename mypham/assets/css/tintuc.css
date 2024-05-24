@@ -1,3 +1,6 @@
+.tintuc {
+   text-decoration: underline black;
+}
 .section_tintuc {
   margin-top: 10%;
 }
@@ -32,22 +35,28 @@
   height: 1.25rem; 
   width: 1.25rem; 
 }
-
 .title_header_and_img {
   margin-top: 0.625rem; /* Was 10px */
-  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem #CCCCCC; /* Was 2px 2px 2px 2px */
+  box-shadow: 0.2rem 0.3rem 0.2rem 0.3rem #CCCCCC; /* Was 2px 2px 2px 2px */
   border: 0.125rem solid #DDDDDD; /* Was 2px */
   width: 59%;
   height: 24rem;
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   overflow: hidden;
-  /* transform: translateX(35%); */
   z-index: 999;
   border-radius: 1.0625rem;
   margin: auto;
+  transition: all 0.3s ease; /* Thêm thuộc tính chuyển đổi mượt mà */
 }
+
+.title_header_and_img:hover {
+  box-shadow: 0.4rem 0.5rem 0.4rem 0.5rem #AAAAAA; /* Tạo bóng đổ lớn hơn khi hover */
+  transform: translateY(-10px); /* Di chuyển phần tử lên trên */
+  transition: all 0.3s ease; /* Làm cho sự chuyển đổi mượt mà */
+}
+
 .content-tintuc1{
   width: 30%;
   padding: 3%;
@@ -88,6 +97,12 @@
   font-weight: 700;
 }
 
+.text_xemtiep:hover {
+  background-color: aquamarine;
+  color: #CCCCCC;
+
+}
+
 .feedin_cocoon {
   display: block !important; 
 }
@@ -99,8 +114,7 @@
   display: flex ;
   flex-direction:column ;
   justify-content: space-between;
-  height: 100%;
-  gap: 30px;
+
 }
 
 .matna {
@@ -149,12 +163,17 @@
   margin: auto;
 }
 .matna, .thachhoahonh, .Cocoon_tienphong {
-  /* ... other styles ... */
   position: relative;
   z-index: 999;
   border-radius: 28px;
-  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem #CCCCCC;
-  border: 1.5px solid ;
+  box-shadow: 0.2rem 0.3rem 0.2rem 0.3rem #CCCCCC;
+  transition: all 0.3s ease; /* Thêm thuộc tính chuyển đổi mượt mà */
+}
+
+.matna:hover, .thachhoahonh:hover, .Cocoon_tienphong:hover {
+  box-shadow: 0.4rem 0.5rem 0.4rem 0.5rem #AAAAAA; /* Tạo bóng đổ lớn hơn khi hover */
+  transform: translateY(-10px); /* Di chuyển phần tử lên trên */
+  transition: all 0.3s ease; /* Thêm thuộc tính chuyển đổi mượt mà */
 }
 
 
@@ -166,7 +185,7 @@
   margin-left: auto; /* Căn giữa phần tử */
   margin-right: auto; /* Căn giữa phần tử */
   gap: 5rem; /* Khoảng cách giữa các phần tử con */
-  margin-bottom: 23%;  /* 50px */
+  margin-bottom: 20%;  /* 50px */
   
   height: auto;
 }
@@ -175,6 +194,11 @@
 @media(max-width:1024px){
   .text_title{
     font-size: 18px;
+    
+  }
+  .thongtin_sanpham {
+    height: 100%;
+    gap: 64px;
   }
 }
 /* For tablets */

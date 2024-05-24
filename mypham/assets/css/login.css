@@ -23,21 +23,18 @@ body {
     flex-direction: column; 
 }
 
-
-
 .login {
     color: #D09A59; 
     font-size: 1.5rem; 
     text-align: left; 
     margin-bottom: 14px;
     order: 1; 
-    padding-top: 30px;/* Place heading at the top */
+    padding-top: 30px; /* Place heading at the top */
 }
 
 .text_pading {
     padding-top: 30px;
 }
-
 
 .input1 {
     width: 100%;
@@ -63,12 +60,13 @@ body {
 .base img {
     width: 100%;
     height: auto;
+    animation: pulse 2s infinite;
+    margin-left: 40%;
 }
 
 .forgot_pw {
     font-size: 14px; 
     color: #BB3737; 
-    /* No need for order or align-self as it's handled by the flex container */
 }
 
 .click_login {
@@ -80,7 +78,6 @@ body {
     border-radius: 3px;
     order: 6;
     transition: all 0.3s ease;
-
 }
 
 .click_login:hover {
@@ -93,6 +90,8 @@ body {
 
 .font_weight {
     font-weight: 700;
+    text-align: center;
+    width: 100%;
 }
 
 .color_text {
@@ -125,9 +124,8 @@ body {
     background-color: #FFFFFF; 
     border: 1px solid #000000; 
     border-radius: 3px;
-    order: 2; /* Place "Login with Google" button next */
+    border: 1px solid;
 }
-
 
 .logo {
     font-size: 24px; 
@@ -156,18 +154,21 @@ body {
 .remember-me {
     display: flex;
     align-items: center;
-    
 }
 
 .pading_top {
     padding-top: 50px;
 }
-@media(max-width: 1024px){
-    .base{
+
+@media(max-width: 1024px) {
+    .base {
         transform: translateX(0%);
     }
-    .base{
+    .base  {
         width: 50%;
+    }
+    .base img {
+        margin-left: 0%;
     }
     .main_login {
         display: flex; 
@@ -176,7 +177,6 @@ body {
         overflow-y: hidden;
         height: 60%;
     }
-
     .login_page {
         height: 60%;
         width: 50%; 
@@ -186,35 +186,36 @@ body {
         margin-bottom: 80px;
         margin-right: 10px;
     }
-    .login{
+    .login {
         font-size: 20px;
         padding-top: 10px;
     }
-    .divider-text{
+    .divider-text {
         font-size: 16px;
     }
-    .remember-me{
+    .remember-me {
         font-size: 15px;
     }
-    .text_pading{
+    .text_pading {
         display: none;
     }
-    .link_signup{
+    .link_signup {
         padding-top: 40px;
     }
-    .color_text{
+    .color_text {
         font-size: 18px;
     }
     a,
-    .link_signup p{
+    .link_signup p {
         font-size: 13px;
     }
 }
+
 @media(max-width: 425px) {
-    .base{
+    .base {
         transform: translateX(0%);
     }
-    .base{
+    .base {
         width: 70%;
     }
     .main_login {
@@ -224,7 +225,6 @@ body {
         overflow-y: hidden;
         height: 60%;
     }
-
     .login_page {
         height: 60%;
         width: 90%; 
@@ -233,47 +233,51 @@ body {
         box-sizing: border-box;
         margin-bottom: 80px;
     }
-    .login{
+    .login {
         font-size: 20px;
         padding-top: 10px;
     }
-    .divider-text{
+    .divider-text {
         font-size: 16px;
     }
-    .remember-me{
+    .remember-me {
         font-size: 15px;
     }
-    .text_pading{
+    .text_pading {
         display: none;
     }
-    .link_signup{
+    .link_signup {
         padding-top: 40px;
     }
     a,
-    .link_signup p{
+    .link_signup p {
         font-size: 13px;
     }
 }
 
 @keyframes pulse {
     0% {
-      transform: scale(1);
-      opacity: 1;
+        transform: scale(1);
+        opacity: 1;
     }
     50% {
-      transform: scale(1.05);
-      opacity: 0.9;
+        transform: scale(1.05);
+        opacity: 0.9;
     }
     100% {
-      transform: scale(1);
-      opacity: 1;
+        transform: scale(1);
+        opacity: 1;
     }
-  }
-  
-  .base img {
-      /* Keep existing properties */
-      width: 100%;
-      height: auto;
-      /* Add Pulse animation */
-      animation: pulse 2s infinite;
-  }
+}
+
+.base img {
+    width: 100%;
+    height: auto;
+    animation: pulse 2s infinite;
+}
+
+@media (min-width: 1440px) {
+    .base img {
+        margin-left: 40%;
+    }
+}
