@@ -106,6 +106,9 @@ img {
 .action-acount img{
     margin: auto;
 }
+.action-km{
+    color: black;
+}
 .action-acount-donhang{
     background-color: #D2AC62;
     color: #fff;
@@ -276,8 +279,8 @@ img {
     }
 
 }
-@media(max-width:425px){
-    *{
+@media(max-width:580px){
+    body{
         overflow-x: hidden;
     }
     .wrapper-acount{
@@ -323,18 +326,14 @@ img {
     .gia-sp-acount{
         font-size: 9px;
     }
-    .history-sp-acount{
-        width: 70%;
-    }
-
-}
-@media(max-width:375px){
     .name-acount{
         width:28% ;
     }
     .history-sp-acount{
         width: 78%;
     }
+
+
 }
 @media(max-width:320px){
     .history-sp-acount{

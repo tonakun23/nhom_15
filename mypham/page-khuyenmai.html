@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài khoản cá nhân</title>
+    <link rel="stylesheet" href="./assets/css/resets.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/caphedaklak.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/acount.css">
+    <link rel="stylesheet" href="./assets/css/khuyenmai.css">
+</head>
+<body>
+    <!-- header section start -->
+    <header>
+        <a href="landing_page.html" class="logo"><img src="./assets/picture/header/logo.svg" alt=""></a>
+        <nav class="navbar">
+            <div>
+                <a class="active1 sanpham" href="#" onclick="toggleSubnav(event)">sản phẩm</a>
+                <ul class="subnav">
+                    <li><a class="active1 sanpham" href="caphedaklak.html">chăm sóc da</a></li>
+                    <li><a class="active1 sanpham" href="">chăm sóc cơ thể</a></li>
+                    <li><a class="active1 sanpham" href="">chăm sóc môi</a></li>
+                    <li><a class="active1 sanpham" href="">chăm sóc tóc</a></li>
+                </ul>
+            </div>
+            <a href="about_us.html" class="vechungtoi">về chúng tôi</a>
+            <a href="tintuc.html" class="tintuc">tin tức</a>
+        </nav>
+        <div class="action">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <img class="search" src="./assets/picture/header/search.svg" alt="">
+            <img class="bag" src="./assets/picture/header/account.svg" id="cart-icon" alt="">
+            <div class="cart">
+                <!-- cart title -->
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content"></div>
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- buy button -->
+                <button class="btn-buy">Buy Now</button>
+                <!-- cart close -->
+                <i class="fa-solid fa-x" id="close-cart"></i>
+            </div>
+            <a href="acount.html"><img class="account" src="./assets/picture/header/bag.svg" alt=""></a>
+        </div>
+    </header>
+    <!-- search form -->
+    <form action="" id="search-form">
+        <input type="search" name="" id="search-box" placeholder="Tìm kiếm">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- phan noi dung chinh -->
+    <section class="wrapper-acount">  
+        <div class="banner-acount">
+            <div class="acount-picture">
+                <img src="./assets/picture/acount/banner-acount.png" alt="">
+                <div class="acount-1">
+                    <div class="name-acount">
+                        <div class="name-acount-id thongbao-acount"> <img src="./assets/picture/acount/my.png" alt=""></div>
+                    <div>
+                        <div class="dangxuat">my</div>
+                        <div class="dangxuat1">Đăng xuất</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thongbao-acount"> <img src="./assets/picture/acount/thongbao.png" alt=""> </div>
+        </div>
+        <h3 class="dangxuat1">lần cuối bạn đăng nhập là ngày 20/11/2021</h3>
+        <div class="menu-acount">
+            <a href="acount.html" class="action-acount">
+                <img src="./assets/picture/khuyenmai/Group 144.png" alt="">
+                <span class="ten-menu-acount">Đơn hàng</span>
+            </a>
+            <div class="action-acount action-acount-donhang">
+                <img src="./assets/picture/khuyenmai/km.png" alt="">
+                <span class="ten-menu-acount">Khuyến mãi</span>
+            </div>
+            <div class="action-acount">
+                <img src="./assets/picture/acount/yeuthich.png" alt="">
+                <span class="ten-menu-acount">Sản phẩm yêu thích</span>
+            </div>
+            <div class="action-acount">
+                <img src="./assets/picture/acount/vanchuyen.png" alt="">
+                <span class="ten-menu-acount">Vận chuyển</span>
+            </div>
+        </div>
+        <div class="khuyenmai-page">
+            <div class="khuyenmai-1">
+                <div class="content-khuyenmai">Hương tan muộn phiền <br>    Đón Tết bình an</div>
+                <img src="./assets/picture/khuyenmai/lixi.png" alt="">
+            </div>
+            <div class="khuyenmai-2">
+                <img src="./assets/picture/khuyenmai/image 12.png" alt="">
+            </div>
+        </div>
+        <div class="khuyenmai-foryou">Khuyến mãi dành cho bạn</div>
+        <div class="khuyenmai-page-2">
+            <div class="chitiet-km">
+                <div class="content-km">
+                    <div class="text-km">Tải app nhận quà</div>
+                    <div class="text-km-1">Chi tiết</div>
+                </div>
+                <img src="./assets/picture/khuyenmai/image 13.png" alt="">
+            </div>
+            <div class="chitiet-km">
+                <div class="content-km">
+                    <div class="text-km">Tải app nhận quà</div>
+                    <div class="text-km-1">Chi tiết</div>
+                </div>
+                <img src="./assets/picture/khuyenmai/Rectangle.png" alt="">
+            </div>
+            <div class="chitiet-km">
+                <div class="content-km">
+                    <div class="text-km">Tải app nhận quà</div>
+                    <div class="text-km-1">Chi tiết</div>
+                </div>
+                <img src="./assets/picture/khuyenmai/image 14 (1).png" alt="">
+            </div>
+        </div>
+        <div class="slide-circle">
+            <div class="avtive-km"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="noidung">
+        <img class="logo" src="./assets/picture/header/logo.svg" alt="">
+        <ul class="grid">
+            <li>
+                <ul class="colum1">
+                    <li class="dong1">SẢN XUẤT TẠI CÔNG TY TNHH MỸ PHẨM NATURE STORY</li>
+                    <li class="">SỐ GPKD: 0313300273</li>
+                    <li class="">Phòng Đăng kí Kinh doanh - Sở kế hoạch và đầu tư <br>
+                        38C - 39C, khu phố 1, quốc lộ 1A, phường Tân Thới Hiệp, Quận 12, Tp.HCM, Việt Nam</li>
+                    <li class="">Điện thoại: 02838328228</li>
+            </ul>
+            </li>
+            <li>
+                <ul class="colum2">
+                    <li class="">
+                        <ul class="lienhe1">
+                            <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                            <li><a href="">ĐẠI LÍ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="lienhe">
+                            <li><img src="./assets/picture/footer/phone.png" alt=""></li>
+                            <li class="sdt">028 3832 8228</li>
+                        </ul>
+                    </li>
+                    <li class="lienhe1"><a href="muahang.html">HƯỚNG DẪN MUA HÀNG</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul class="colum3">
+                    <li><a href="">chính sách bảo mật</a></li>
+                    <li><a href="chsach.html">chính sách đổi trả</a></li>
+                    <li><a href="">chính sách giao hàng</a></li>
+                </ul>
+            </li>
+        </ul>
+            <div class="line"></div>
+            <ul class="dongcuoi">
+                <li>
+                    <ul  class="icon_footer">
+                        <li><img class="face" src="./assets/picture/footer/iconface.png" alt=""></li>
+                        <li><img class="twiter" src="./assets/picture/footer/icontwit.png" alt=""></li>
+                        <li><img class="intas" src="./assets/picture/footer/iconintas.png" alt=""></li>
+                        <li><img class="ytb" src="./assets/picture/footer/iconytb.png" alt=""></li>
+                    </ul>
+                </li>
+                <li class="year_product">©2018 Cocoon</li>
+                <li class="baohanh"><img src="./assets/picture/footer/congthuong.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+
+
+
+    <!-- phần js -->
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/caphedaklak.js"></script>
+    <script src="./assets/js/slide_show.js"></script>
+
+</body>
+</html>
+</body>
+</html>
