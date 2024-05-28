@@ -12,6 +12,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
 }
 
 .policy-header-bar {
@@ -25,10 +26,67 @@ body {
 
 .policy-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #f9f9f9;
     padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+    height: 20vh;
+    background-color: #EFF5E5;
+}
+.container {
+    margin-top: auto;
+    width: 30%;
+    height: 50%;
+    background-color: #EFF5E5;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.button {
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    font-size: 14px;
+    font-weight: 700;
+    color: #D2AC62;
+}
+
+.button::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    background-color: #c89c63;
+    left: 2%;
+    border-radius: 50%;
+}
+
+#check:checked + .button,
+#check2:checked + .button,
+#check3:checked + .button {
+    background-color: #c89c63;
+    color: white;
+    text-align: right;
+}
+
+#check:checked + .button::before,
+#check2:checked + .button::before,
+#check3:checked + .button::before {
+    background-color: white;
+    transform: translateX(269%);
+}
+
+#check,
+#check2,
+#check3 {
+    display: none;
 }
 
 .policy-button {
@@ -42,6 +100,8 @@ body {
     color: #333;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
+    height: 50%;
+    margin-top: auto;
 }
 
 .policy-button:hover {
@@ -76,3 +136,51 @@ body {
 .policy-content a:hover {
     text-decoration: underline;
 }
+@media (max-width: 465px) {
+    .container {
+        width: 90%; /* Điều chỉnh chiều rộng container */
+        height: auto; /* Chiều cao tự động theo nội dung */
+    }
+
+    .button {
+        height: 40px; /* Giảm chiều cao nút */
+        font-size: 10px; /* Giảm kích thước chữ */
+    }
+
+    .button::before {
+        width: 30px; /* Giảm kích thước hình tròn */
+        height: 30px; /* Giảm kích thước hình tròn */
+        left: 5px; /* Điều chỉnh vị trí để không bị đè lên chữ */
+    }
+
+    #check:checked + .button::before,
+    #check2:checked + .button::before,
+    #check3:checked + .button::before {
+        transform: translateX(350%); /* Điều chỉnh vị trí hình tròn khi checked */
+    }
+}
+
+
+    @media (max-width: 320px) {
+        .container {
+            width: 90%; /* Điều chỉnh chiều rộng container */
+            height: auto; /* Chiều cao tự động theo nội dung */
+        }
+    
+        .button {
+            height: 30px; /* Giảm chiều cao nút */
+            font-size: 7px; /* Giảm kích thước chữ */
+        }
+    
+        .button::before {
+            width: 20px; /* Giảm kích thước hình tròn */
+            height: 20px; /* Giảm kích thước hình tròn */
+            left: 5px; /* Điều chỉnh vị trí để không bị đè lên chữ */
+        }
+    
+        #check:checked + .button::before,
+        #check2:checked + .button::before,
+        #check3:checked + .button::before {
+            transform: translateX(400%); /* Điều chỉnh vị trí hình tròn khi checked */
+        }
+    }
