@@ -57,7 +57,7 @@ body {
     max-width: 37.875rem;
     margin: 2rem auto;
     position: relative; /* Add this line */
-    left: 0; /* Reset any left offset */
+     /* Reset any left offset */
 }
 
 .base img {
@@ -311,8 +311,8 @@ body {
 }
 
 @media (min-width: 1440px) {
-    .base {
+    .base img {
         position: relative;
-        left: -11%; /* Adjust to move 20% to the left */
+        left: -30%; /* Adjust to move 20% to the left */
     }
 }

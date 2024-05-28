@@ -277,7 +277,8 @@ body {
 }
 
 @media (min-width: 1440px) {
-    .base img {
-        margin-left: 40%;
+    .base {
+        position: relative;
+        left: -11%; /* Adjust to move 20% to the left */
     }
 }
